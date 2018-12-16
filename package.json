@@ -1,0 +1,15 @@
+{
+  "name": "jrweb",
+  "version": "1.0.0",
+  "description": "JRweb - Evelyn",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
