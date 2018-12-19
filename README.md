@@ -22,6 +22,56 @@ There [x] steps to initialized the whole environment.
 
 http://complexspiral.com/publications/containing-floats/
 
+## Position
+
+## Name
+
+index.html
+
+## Icon
+
+Icon finder
+Use SVG
+
+PNG - liner caculation, Graphic design, small size
+JPG - Scene design.
+
+## Code review
+
+- component design, use wrap to define it's position.
+
+<div class="container"></div>
+
+css no line break
+
+repeat component use ul & li
+
+no space in folder
+
+## SVG
+
+inline modified hover
+create svg animation
+
+## BEM
+
+## RWD
+
+Responsive web design
+
+mixin 320px
+
+iphone 414px
+
+ipad 768
+ipad pro 1024
+
+apple watch
+
+1. import scale
+2. percentage, media screen
+3.
+
 ## Quiz
 
 1. What does the attribute maxlength do when added to a text input?
