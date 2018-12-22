@@ -100,11 +100,24 @@ when sets to 0, cannot expand or shrunk
   // Used for a long word....
 ```
 
+## Lesson-4 Javascript
+
+- High level (compare with c)
+- weakly typed
+- object-based
+- interpreted (one line) (complier)
+
+ECMA Script - standard
+
+ES5 common language - browser support
+ES6(2015) develop version - babel transfer
+
+### js version
+
 ## Quiz
 
 1. What does the attribute maxlength do when added to a text input?
    Controls the physical length of the input element
-   D
 
 2.Which of the following elements is used to define multiple media resources for <video> and <audio>?
 
