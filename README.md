@@ -70,7 +70,35 @@ apple watch
 
 1. import scale
 2. percentage, media screen
-3.
+
+## Bootstrap 3 & 4
+
+float & flexbox
+
+consistency
+
+no more than 4 fonts
+
+animated css
+
+## CSS
+
+### Flex-box
+
+- flex-basis: the basic width
+- flex-grow: browser bigger, expand
+- flex-shrunk: browser smaller, shrunk
+
+when sets to 0, cannot expand or shrunk
+
+- Too make a static block
+
+```
+  flex: 0 0 10%;
+  min-width: 0;
+  word-wrap: break-word;
+  // Used for a long word....
+```
 
 ## Quiz
 

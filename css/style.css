@@ -1,100 +1,139 @@
+.container {
+  display: flex; }
+  .container[direction="row"] {
+    flex-direction: row; }
+  .container[direction="column"] {
+    flex-direction: column; }
+  .container[justify="flex-end"] {
+    justify-content: flex-end; }
+  .container[justify="center"] {
+    justify-content: center; }
+  .container[justify="flex-start"] {
+    justify-content: flex-start; }
+  .container[justify="space-between"] {
+    justify-content: space-between; }
+  .container[justify="space-around"] {
+    justify-content: space-around; }
+  .container[align-items="flex-start"] {
+    align-items: flex-start; }
+  .container[align-items="flex-end"] {
+    align-items: flex-end; }
+  .container[align-items="center"] {
+    align-items: center; }
+  .container[align-items="stretch"] {
+    align-items: stretch; }
+  .container[align-items="baseline"] {
+    align-items: baseline; }
+  .container[align-content="stretch"] {
+    align-content: stretch; }
+  .container[align-content="flex-start"] {
+    align-content: flex-start; }
+  .container[align-content="flex-end"] {
+    align-content: flex-end; }
+  .container[align-content="space-between"] {
+    align-content: space-between; }
+  .container[align-content="space-around"] {
+    align-content: space-around; }
+  .container[align-content="center"] {
+    align-content: center; }
+
+.item[static="break-word"] {
+  min-width: 0;
+  word-wrap: break-word; }
+
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: inherit;
-}
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 320px) {
+    html {
+      font-size: 7px; } }
 
 body {
   font-family: "Lato", sans-serif;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 .card {
-  width: 430px;
-  height: 300px;
-  margin: 10px 10px;
+  width: 43rem;
+  height: 30rem;
   position: relative;
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: 1.2rem;
+  margin: 1rem;
+  padding: 3rem;
   color: white;
-  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.32);
+  box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.32);
   transition: all 0.3s;
-}
-.card:hover {
-  transform: translateY(-10px);
-}
-.card__img-wrap {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.card__img-wrap img {
-  width: 150%;
-  height: 150%;
-}
+  flex-grow: 0;
+  flex-shrink: 0; }
+  .card:hover {
+    transform: translateY(-1rem); }
+  .card__img-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; }
+    .card__img-wrap img {
+      width: 100%;
+      height: 100%; }
+  .card__img-mask {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%); }
+  .card__body {
+    position: relative;
+    width: 100%; }
+  .card__tag {
+    display: inline-block;
+    font-weight: 400;
+    margin-bottom: 14rem;
+    padding: 0.3rem 1.5rem;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    border-radius: 0.2rem;
+    background-color: #d24a3f; }
+  .card__details {
+    flex: 0 0 70%; }
+    .card__details h3 {
+      font-size: 2.6rem;
+      margin-bottom: 0.4rem; }
+    .card__details p {
+      margin-bottom: 1.2rem;
+      font-size: 1.4rem; }
+    .card__details__reviews {
+      font-weight: 300;
+      font-size: 1.2rem;
+      color: gainsboro; }
+      .card__details__reviews ul {
+        text-decoration: none;
+        margin: 0;
+        display: inline; }
+        .card__details__reviews ul li {
+          display: inline; }
+          .card__details__reviews ul li i {
+            color: #f0d856;
+            margin-right: 0.3rem; }
+          .card__details__reviews ul li span {
+            margin-left: 0.5rem; }
+  .card__more {
+    font-size: 2.8rem; }
 
-.card__img-mask {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.4) 100%
-  );
-}
-.card__label {
-  position: absolute;
-  right: 30px;
-  top: 20px;
-  padding: 3px 15px;
-  font-size: 14px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  border-radius: 2px;
-  background-color: #d24a3f;
-}
-.card__details {
-  position: absolute;
-  bottom: 30px;
-  left: 40px;
-}
-.card__details__title {
-  font-size: 26px;
-  margin-bottom: 4px;
-}
-.card__details__subtitle {
-  margin-bottom: 12px;
-  font-size: 14px;
-}
-.card__details__reviews {
-  font-weight: 300;
-  font-size: 12px;
-  color: gainsboro;
-}
-.card__details__reviews i {
-  color: #f0d856;
-  margin-right: 3px;
-}
-.card__details__reviews span {
-  margin-left: 5px;
-}
-.card__more {
-  position: absolute;
-  bottom: 20px;
-  right: 40px;
-  font-size: 28px;
-}
 .card-container {
   display: flex;
-  flex-wrap: wrap;
-}
+  flex-wrap: wrap; }
+
 .icon {
   display: inline-block;
   width: 1em;
   height: 1em;
   stroke-width: 0;
   stroke: currentColor;
-  fill: currentColor;
-}
+  fill: currentColor; }
