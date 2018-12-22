@@ -1,0 +1,11 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  @media only screen and (max-width: 320px) {
+    font-size: 7px;
+  }
+}
