@@ -15,6 +15,7 @@
 @import "base/base";
 @import "base/typography";
 
+@import "layout/flexgrid";
 @import "layout/header";
 @import "layout/content";
 @import "layout/footer";
@@ -23,3 +24,4 @@
 @import "pages/resume";
 @import "pages/services";
 @import "pages/blog";
+@import "pages/contact";
