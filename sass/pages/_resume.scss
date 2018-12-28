@@ -1,0 +1,140 @@
+.b-timeline-box-whole {
+  padding: 2.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.b-timeline-box {
+  flex: 0 1 48%;
+  //   background-color: aquamarine;
+}
+
+.b-timeline {
+  &__list {
+    padding: 1rem 0;
+    border-left: 2px solid var(--color-line-grey);
+    position: relative;
+  }
+
+  &__item {
+    position: relative;
+    margin-left: 1.2rem;
+
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__dot {
+    position: absolute;
+    left: -1.65rem;
+    top: 1.3rem;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid var(--color-primary);
+    z-index: 21;
+  }
+
+  &__content-box {
+    padding: 1rem 1.3rem;
+    border-left: 2px solid var(--color-primary);
+    box-shadow: 0 0 0.2rem rgba(black, 0.2);
+    transition: all 0.1s;
+
+    // Deco: the green line between box and timeline
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1.3rem;
+      background-color: var(--color-primary);
+      height: 2px;
+      top: 1.6rem;
+      left: -1.2rem;
+      z-index: 20;
+    }
+
+    // hover effects
+    &:hover {
+      box-shadow: 0 0 0.5rem rgba(black, 0.25);
+    }
+  }
+
+  &__title {
+    margin-bottom: 0.8rem;
+  }
+
+  &__timeinfo {
+    font-size: 0.8rem;
+    display: flex;
+    margin-bottom: 0.6rem;
+  }
+
+  &__time {
+    color: var(--color-primary);
+    border-right: 1px solid var(--color-line-grey);
+    padding-right: 0.6rem;
+  }
+
+  &__company {
+    padding: 0 0.6rem;
+    color: var(--color-typo-grey-light);
+  }
+
+  &__description {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+}
+
+.b-skills-box-whole {
+  padding: 0 3rem 4rem 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.b-skills-box {
+  flex: 0 1 48%;
+}
+
+.b-skills {
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__title {
+    margin-bottom: 0.5rem;
+  }
+
+  &__bar {
+    height: 100%;
+    width: 100%;
+    font-size: 0.7rem;
+    border: 1px solid var(--color-line-grey);
+    background-color: var(--color-background-grey);
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 80%;
+      background-color: var(--color-primary);
+      animation: 1.5s slideFromLeft;
+    }
+  }
+}
+
+@keyframes slideFromLeft {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 80%;
+  }
+}

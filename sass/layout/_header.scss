@@ -1,0 +1,86 @@
+.b-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.b-navbar {
+  display: flex;
+  width: 100%;
+  max-width: $max-width;
+  margin: 0 auto;
+  height: 6rem;
+  // Position
+  align-items: center;
+  justify-content: space-between;
+
+  &__brand {
+    &:link,
+    &:visited {
+      display: inline-block;
+      font-family: "Montserrat", Helvetica, sans-serif;
+      font-weight: 500;
+      margin-right: auto;
+      font-size: 1.2rem;
+      color: var(--color-typo-grey-dark);
+    }
+
+    &:hover,
+    &:active {
+      cursor: pointer;
+    }
+
+    & span {
+      color: var(--color-primary);
+    }
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  // First item
+  &__item:first-child &__link {
+    &:link,
+    &:visited {
+      color: var(--color-typo-grey-dark);
+    }
+    &::after {
+      transform: scaleX(0.3);
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      color: var(--color-typo-grey-light);
+      font-family: "Montserrat", Helvetica, sans-serif;
+      font-size: 0.9rem;
+      padding: 0.8rem 1.2rem;
+      position: relative;
+    }
+    &:hover,
+    &:active {
+      color: var(--color-typo-grey-dark);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      transform: scaleX(0);
+      background-color: var(--color-primary);
+      transition: transform 0.2s;
+      transform-origin: center;
+    }
+    // border effects
+    &:hover::after {
+      transform: scaleX(0.3);
+    }
+  }
+}

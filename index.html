@@ -4,95 +4,86 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- Lato fonts -->
-    <!-- <link
-      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+    <!-- Google Fonts: Montserrat -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700"
       rel="stylesheet"
-    /> -->
-    <!-- Font awesome css -->
-    <!-- <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
-      crossorigin="anonymous"
-    /> -->
+    />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./bootstrap-4.2.1-dist/css/bootstrap.css" />
-    <!-- Main css (Include BS) -->
-    <link rel="stylesheet" href="./css/style.css" />
-
     <!-- Bootsrap JS -->
-    <script src="./bootstrap-4.2.1-dist/dependecies/jquery-3.3.1.slim.min.js"></script>
+    <script src="./bootstrap-4.2.1-dist/dependecies/jquery.js"></script>
     <script src="./bootstrap-4.2.1-dist/dependecies/popper.min.js"></script>
     <script src="./bootstrap-4.2.1-dist/js/bootstrap.js"></script>
+    <!-- Main css (Include BS) -->
+    <link rel="stylesheet" href="./css/style.css" />
     <!-- Main JS -->
     <script src="./js/index.js"></script>
     <!-- <script src="./bootstrap-4.2.1-dist/js/bootstrap.min.js"></script> -->
     <title>Portfolio</title>
   </head>
   <body>
-    <div id="page" class="page">
-      <header class="header" id="header">
-        <nav>
-          <div class="logo header__logo">
-            <svg class="logo__svg">
-              <use xlink:href="img/portfolio/icons/sprite.svg#icon-cloud"></use>
-            </svg>
-            <a href="#" class="logo__brand"> Evelyn <span>Chu</span> </a>
-          </div>
-
-          <button type="button" class="header__button button">
-            <svg class="svg--md svg--white">
-              <use xlink:href="img/portfolio/icons/sprite.svg#icon-menu"></use>
-            </svg>
-          </button>
-
-          <ul class="menu">
-            <li class=""><a href="#" class="">Home</a></li>
-            <li class=""><a href="#" class="">Resume</a></li>
-            <li class=""><a href="#" class="">Services</a></li>
-            <li class=""><a href="#" class="">Blog</a></li>
-            <li class=""><a href="#" class="">Contact</a></li>
+    <div id="page" class="b-page">
+      <header class="b-header">
+        <nav class="b-navbar">
+          <a class="b-navbar__brand" href="#">Evelyn <span>Chu</span></a>
+          <ul class="b-navbar__list">
+            <li class="b-navbar__item">
+              <a href="#home" class="b-navbar__link">Home</a>
+            </li>
+            <li class="b-navbar__item">
+              <a href="#resume" class="b-navbar__link">Resume</a>
+            </li>
+            <li class="b-navbar__item">
+              <a href="#services" class="b-navbar__link">Services</a>
+            </li>
+            <li class="b-navbar__item">
+              <a href="#blog" class="b-navbar__link">Blog</a>
+            </li>
+            <li class="b-navbar__item">
+              <a href="#contact" class="b-navbar__link">Contact</a>
+            </li>
           </ul>
         </nav>
       </header>
-
-      <main class="main">
-        <div class="page-header">
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="photo-wrap">
-                <img src="./img/portfolio/photo.png" alt="photo" />
+      <main class="b-main">
+        <section class="b-home" id="home">
+          <div class="b-content">
+            <div class="b-summary">
+              <div class="b-summary__img-box">
+                <img
+                  src="./img/portfolio/photo.png"
+                  alt="Protrait"
+                  class="b-summary__img"
+                />
               </div>
-            </div>
-            <div class="col-lg-8">
-              <h1 class="title__main title__main--lg">Evelyn Chu</h1>
-              <h2 class="title__main title__main--xs">Web Designer</h2>
-              <div>
-                <ul class="social-link">
-                  <li>
+              <div class="b-summary__description-box">
+                <h1 class="b-summary__name">Evelyn Chu</h1>
+                <h2 class="b-summary__job">Web designer</h2>
+                <ul class="b-summary__social-link-list">
+                  <li class="b-summary__social-link-item">
                     <a href="#">
-                      <svg class="social-link__svg">
+                      <svg class="b-summary__icon">
                         <use
-                          xlink:href="img/portfolio/icons/sprite.svg#icon-twitter"
+                          xlink:href="../img/portfolio/icons/sprite.svg#icon-twitter"
                         ></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="b-summary__social-link-item">
                     <a href="#">
-                      <svg class="social-link__svg">
+                      <svg class="b-summary__icon">
                         <use
-                          xlink:href="img/portfolio/icons/sprite.svg#icon-facebook"
+                          xlink:href="../img/portfolio/icons/sprite.svg#icon-facebook"
                         ></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li class="b-summary__social-link-item">
                     <a href="#">
-                      <svg class="social-link__svg">
+                      <svg class="b-summary__icon">
                         <use
-                          xlink:href="img/portfolio/icons/sprite.svg#icon-instagram"
+                          xlink:href="../img/portfolio/icons/sprite.svg#icon-instagram"
                         ></use>
                       </svg>
                     </a>
@@ -100,34 +91,432 @@
                 </ul>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="page-content">
-          <div class="row">
-            <div class="col-lg-6">
-              <h3 class="b-title__section b-title__section--green">About me</h3>
-              <p>
-                About Me Hello! I’m Evelyn Chu. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Aenean fermentum ullamcorper sem,
-                at placerat dolor volutpat ac. Duis nulla enim, condimentum nec
-                ultricies.
-              </p>
+            <div class="b-about-me">
+              <div class="b-about-me__description-box">
+                <h3 class="b-about-me__title">About <span>Me</span></h3>
+                <p class="b-about-me__content">
+                  Hello! I'm Evelyn. Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Numquam dolores ipsam, esse, laboriosam
+                  molestiae dolorum iusto quos natus aperiam incidunt error ea
+                  debitis quaerat nemo a, labore autem maiores ab.
+                </p>
+              </div>
+              <div class="b-about-me__detail-box">
+                <ul>
+                  <li class="b-about-me__item">
+                    <span class="b-about-me__item-title">Age</span>
+                    <span class="b-about-me__item-content">23</span>
+                  </li>
+                  <li class="b-about-me__item">
+                    <span class="b-about-me__item-title">Residence</span>
+                    <span class="b-about-me__item-content">Australia</span>
+                  </li>
+                  <li class="b-about-me__item">
+                    <span class="b-about-me__item-title">Address</span>
+                    <span class="b-about-me__item-content">
+                      437 Mains Rd, Sunny Bank, QLD
+                    </span>
+                  </li>
+                  <li class="b-about-me__item">
+                    <span class="b-about-me__item-title">E-mail</span>
+                    <span class="b-about-me__item-content">
+                      <a href="#" class="b-link">ore.c0430@gmail.com</a>
+                    </span>
+                  </li>
+                  <li class="b-about-me__item">
+                    <span class="b-about-me__item-title">Phone</span>
+                    <span class="b-about-me__item-content">+61 0404160923</span>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="col-lg-6">
-              <ul class="b-contact-info">
-                <li>Age <span>23</span></li>
-                <li>Residence <span>Australia</span></li>
-                <li>Address <span>437 Mains Road</span></li>
-                <li>E-mail <span>ore.c0430@gmail.com</span></li>
-                <li>Phone <span>0470047960</span></li>
-              </ul>
+          </div>
+        </section>
+        <section class="b-resume" id="resume">
+          <div class="b-content">
+            <div class="b-page-title"><h2 class="b-title--lg">Resume</h2></div>
+            <div class="b-timeline-box-whole">
+              <div class="b-timeline-box">
+                <h3 class="b-title--md b-section-title">Projects</h3>
+                <ul class="b-timeline__list">
+                  <li class="b-timeline__item">
+                    <div class="b-timeline__dot">&nbsp;</div>
+                    <div class="b-timeline__content-box">
+                      <h4 class="b-title--sm b-timeline__title">Music Store</h4>
+                      <p class="b-timeline__timeinfo">
+                        <span class="b-timeline__time"> 2010 </span>
+                        <span class="b-timeline__company"> Apple Inc. </span>
+                      </p>
+                      <p class="b-timeline__description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Quis cum eum obcaecati. Laborum corrupti incidunt
+                        quam!
+                      </p>
+                    </div>
+                  </li>
+                  <li class="b-timeline__item">
+                    <div class="b-timeline__dot">&nbsp;</div>
+                    <div class="b-timeline__content-box">
+                      <h4 class="b-title--sm b-timeline__title">
+                        Virtual Simulation Software
+                      </h4>
+                      <p class="b-timeline__timeinfo">
+                        <span class="b-timeline__time"> 2010 </span>
+                        <span class="b-timeline__company"> Apple Inc. </span>
+                      </p>
+                      <p class="b-timeline__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Incidunt facilis aspernatur atque amet, odio
+                        voluptatibus possimus enim. Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Incidunt facilis
+                        aspernatur atque amet, odio voluptatibus possimus enim.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="b-timeline__item">
+                    <div class="b-timeline__dot">&nbsp;</div>
+                    <div class="b-timeline__content-box">
+                      <h4 class="b-title--sm b-timeline__title">PE Scaning</h4>
+                      <p class="b-timeline__timeinfo">
+                        <span class="b-timeline__time"> 2010 </span>
+                        <span class="b-timeline__company"> Apple Inc. </span>
+                      </p>
+                      <p class="b-timeline__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Incidunt facilis aspernatur atque amet, odio
+                        voluptatibus possimus enim.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="b-timeline-box">
+                <h3 class="b-title--md b-section-title">Experience</h3>
+                <ul class="b-timeline__list">
+                  <li class="b-timeline__item">
+                    <div class="b-timeline__dot">&nbsp;</div>
+                    <div class="b-timeline__content-box">
+                      <h4 class="b-title--sm b-timeline__title">
+                        Frontend-Developer
+                      </h4>
+                      <p class="b-timeline__timeinfo">
+                        <span class="b-timeline__time">
+                          Apr 2017 - Aug 2018
+                        </span>
+                        <span class="b-timeline__company"> Apple Inc. </span>
+                      </p>
+                      <p class="b-timeline__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Rerum qui obcaecati neque illo tenetur eligendi
+                        cupiditate repellendus!
+                      </p>
+                    </div>
+                  </li>
+                  <li class="b-timeline__item">
+                    <div class="b-timeline__dot">&nbsp;</div>
+                    <div class="b-timeline__content-box">
+                      <h4 class="b-title--sm b-timeline__title">
+                        Web Designer
+                      </h4>
+                      <p class="b-timeline__timeinfo">
+                        <span class="b-timeline__time"> 2010 </span>
+                        <span class="b-timeline__company"> Apple Inc. </span>
+                      </p>
+                      <p class="b-timeline__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Incidunt facilis aspernatur atque amet, odio
+                        voluptatibus possimus enim.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="b-timeline__item">
+                    <div class="b-timeline__dot">&nbsp;</div>
+                    <div class="b-timeline__content-box">
+                      <h4 class="b-title--sm b-timeline__title">
+                        Unity3D Developer
+                      </h4>
+                      <p class="b-timeline__timeinfo">
+                        <span class="b-timeline__time"> 2010 </span>
+                        <span class="b-timeline__company"> Apple Inc. </span>
+                      </p>
+                      <p class="b-timeline__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Incidunt facilis aspernatur atque amet, odio
+                        voluptatibus possimus enim.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="b-skills-box-whole">
+              <div class="b-skills-box">
+                <h3 class="b-title--md b-title--green b-section-title">
+                  Design <span>Skills</span>
+                </h3>
+                <ul>
+                  <li class="b-skills__item">
+                    <h4 class="b-skills__title b-title--xs">Web Design</h4>
+                    <div class="b-skills__bar">&nbsp;</div>
+                  </li>
+                  <li class="b-skills__item">
+                    <h4 class="b-skills__title b-title--xs">Graphic Design</h4>
+                    <div class="b-skills__bar">&nbsp;</div>
+                  </li>
+                  <li class="b-skills__item">
+                    <h4 class="b-skills__title b-title--xs">Print Design</h4>
+                    <div class="b-skills__bar">&nbsp;</div>
+                  </li>
+                </ul>
+              </div>
+              <div class="b-skills-box">
+                <h3 class="b-title--md b-title--green b-section-title">
+                  Coding <span>Skills</span>
+                </h3>
+                <ul>
+                  <li class="b-skills__item">
+                    <h4 class="b-skills__title b-title--xs">CSS</h4>
+                    <div class="b-skills__bar">&nbsp;</div>
+                  </li>
+                  <li class="b-skills__item">
+                    <h4 class="b-skills__title b-title--xs">React</h4>
+                    <div class="b-skills__bar">&nbsp;</div>
+                  </li>
+                  <li class="b-skills__item">
+                    <h4 class="b-skills__title b-title--xs">Node JS</h4>
+                    <div class="b-skills__bar">&nbsp;</div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
+        <section class="b-services" id="services">
+          <div class="b-content">
+            <div class="b-page-title">
+              <h2 class="b-title--lg">Services</h2>
+            </div>
+            <div class="b-details-wrap">
+              <div class="b-my-services">
+                <h3 class="b-section-title b-title--md b-title--green">
+                  My <span>Services</span>
+                </h3>
+                <ul class="b-my-services__list">
+                  <li class="b-my-services__item">
+                    <div class="b-my-services__icon-wrap">&times;</div>
+                    <h4 class="b-my-services__title b-title--sm">Web Design</h4>
+                    <p class="b-my-services__description">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                  </li>
+                  <li class="b-my-services__item">
+                    <div class="b-my-services__icon-wrap">&times;</div>
+                    <h4 class="b-my-services__title b-title--sm">Web Design</h4>
+                    <p class="b-my-services__description">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Ducimus a, animi.
+                    </p>
+                  </li>
+                  <li class="b-my-services__item">
+                    <div class="b-my-services__icon-wrap">&times;</div>
+                    <h4 class="b-my-services__title b-title--sm">Web Design</h4>
+                    <p class="b-my-services__description">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Ducimus a, animi accusamus magni culpa neque.
+                    </p>
+                  </li>
+                  <li class="b-my-services__item">
+                    <div class="b-my-services__icon-wrap">&times;</div>
+                    <h4 class="b-my-services__title b-title--sm">Web Design</h4>
+                    <p class="b-my-services__description">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="b-clients">
+                <h3 class="b-title--md b-title--green">Clients</h3>
+                <ul class="b-clients__list">
+                  <li class="b-clients__item"><p>logo</p></li>
+                  <li class="b-clients__item"><p>logo</p></li>
+                  <li class="b-clients__item"><p>logo</p></li>
+                  <li class="b-clients__item"><p>logo</p></li>
+                  <li class="b-clients__item"><p>logo</p></li>
+                  <li class="b-clients__item"><p>logo</p></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="b-blog" id="blog">
+          <div class="b-content">
+            <div class="b-page-title"><h2 class="b-title--lg">Blog</h2></div>
+            <div class="b-details-wrap">
+              <div class="b-card-box">
+                <ul class="b-card-list">
+                  <li class="b-card">
+                    <div class="b-card__tag">
+                      <span class="b-card__day">6</span>
+                      <span class="b-card__month">Dec</span>
+                    </div>
+                    <div class="b-card__img-wrap">
+                      <img
+                        src="./img/portfolio/CG/chiaki-01.png"
+                        alt="Midori-01"
+                      />
+                      <div class="b-card__mask">
+                        <svg class="b-card__svgicon">
+                          <use
+                            xlink:href="../img/portfolio/icons/sprite.svg#icon-file"
+                          ></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="b-card__description-wrap">
+                      <p class="b-card__type">Travel</p>
+                      <h5 class="b-card__title">
+                        Bootstrap is the Most Popular Framework
+                      </h5>
+                    </div>
+                  </li>
+                  <li class="b-card">
+                    <div class="b-card__tag">
+                      <span class="b-card__day">3</span>
+                      <span class="b-card__month">Nov</span>
+                    </div>
+                    <div class="b-card__img-wrap">
+                      <img
+                        src="./img/portfolio/CG/midori-01.png"
+                        alt="Midori-01"
+                      />
+                      <div class="b-card__mask">
+                        <svg class="b-card__svgicon">
+                          <use
+                            xlink:href="../img/portfolio/icons/sprite.svg#icon-file"
+                          ></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="b-card__description-wrap">
+                      <p class="b-card__type">JQuery</p>
+                      <h5 class="b-card__title">One Framework, Every Device</h5>
+                    </div>
+                  </li>
+                  <li class="b-card">
+                    <div class="b-card__tag">
+                      <span class="b-card__day">12</span>
+                      <span class="b-card__month">Oct</span>
+                    </div>
+                    <div class="b-card__img-wrap">
+                      <img
+                        src="./img/portfolio/CG/chiaki-02.png"
+                        alt="Midori-01"
+                      />
+                      <div class="b-card__mask">
+                        <svg class="b-card__svgicon">
+                          <use
+                            xlink:href="../img/portfolio/icons/sprite.svg#icon-file"
+                          ></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="b-card__description-wrap">
+                      <p class="b-card__type">Sport</p>
+                      <h5 class="b-card__title">
+                        Design for Everyone, Everywhere
+                      </h5>
+                    </div>
+                  </li>
+                  <li class="b-card">
+                    <div class="b-card__tag">
+                      <span class="b-card__day">6</span>
+                      <span class="b-card__month">Dec</span>
+                    </div>
+                    <div class="b-card__img-wrap">
+                      <img
+                        src="./img/portfolio/CG/chiaki-03.jpg"
+                        alt="Midori-01"
+                      />
+                      <div class="b-card__mask">
+                        <svg class="b-card__svgicon">
+                          <use
+                            xlink:href="../img/portfolio/icons/sprite.svg#icon-file"
+                          ></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="b-card__description-wrap">
+                      <p class="b-card__type">Travel</p>
+                      <h5 class="b-card__title">An introduction To PostCSS</h5>
+                    </div>
+                  </li>
+                  <li class="b-card">
+                    <div class="b-card__tag">
+                      <span class="b-card__day">8</span>
+                      <span class="b-card__month">May</span>
+                    </div>
+                    <div class="b-card__img-wrap">
+                      <img
+                        src="./img/portfolio/CG/chiaki-04.png"
+                        alt="Midori-01"
+                      />
+                      <div class="b-card__mask">
+                        <svg class="b-card__svgicon">
+                          <use
+                            xlink:href="../img/portfolio/icons/sprite.svg#icon-file"
+                          ></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="b-card__description-wrap">
+                      <p class="b-card__type">Travel</p>
+                      <h5 class="b-card__title">
+                        Bootstrap is the Most Popular Framework
+                      </h5>
+                    </div>
+                  </li>
+                  <li class="b-card">
+                    <div class="b-card__tag">
+                      <span class="b-card__day">6</span>
+                      <span class="b-card__month">Dec</span>
+                    </div>
+                    <div class="b-card__img-wrap">
+                      <img
+                        src="./img/portfolio/CG/chiaki-05.png"
+                        alt="Midori-01"
+                      />
+                      <div class="b-card__mask">
+                        <svg class="b-card__svgicon">
+                          <use
+                            xlink:href="../img/portfolio/icons/sprite.svg#icon-file"
+                          ></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="b-card__description-wrap">
+                      <p class="b-card__type">Travel</p>
+                      <h5 class="b-card__title">
+                        Bootstrap is the Most Popular Framework
+                      </h5>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="b-contact" id="contact">
+          <div class="b-content">
+            <div class="b-page-title">
+              <div class="b-title--lg">Contact</div>
+            </div>
+          </div>
+        </section>
       </main>
-      <footer>
-        <div class="copyrights">
-          © 2019 All rights reserved. Designed by <a href="#">JR</a>
+      <footer class="b-footer">
+        <div class="b-footer__copyright">
+          © 2019 All rights reserved. Designed by
+          <a class="b-link" href="#">Evelyn</a>
         </div>
       </footer>
     </div>

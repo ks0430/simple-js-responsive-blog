@@ -1,0 +1,64 @@
+.b-main {
+  // navbar selection function
+  // Set current # visible
+  // otherwise push it from current document flow
+  position: relative;
+  & > section {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+    transition: all 0.4s;
+    overflow: hidden; // If not set to overflow hidden, then content will overflow and take space.
+  }
+
+  & > section:target {
+    // position: relative; // Cannot set to relative, otherwise absolute will find it's sibling as target
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+  }
+}
+
+.b-page {
+  position: relative;
+}
+
+.b-content {
+  max-width: $max-width;
+  margin: 0 auto;
+  margin-top: 6.5rem;
+  margin-bottom: 4rem;
+
+  border-radius: 14px;
+  background-color: white;
+  overflow: hidden;
+
+  box-shadow: 0 0.8rem 1.5rem rgba(black, 0.15);
+  position: relative;
+  z-index: 5;
+}
+
+.b-details-wrap {
+  padding: 2.5rem 3rem;
+}
+
+.b-page-title {
+  color: white;
+  // position
+  text-align: center;
+  padding: 2.8rem 0;
+  // backgournd
+  background-color: var(--color-primary);
+  background-image: url(../img/portfolio/sp_main_bg.png);
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: 70% center;
+}
+
+.b-section-title {
+  margin-bottom: 1.6rem;
+}
