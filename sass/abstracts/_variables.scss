@@ -3,15 +3,17 @@
 
   --color-typo-grey-dark: #212121;
   --color-typo-grey-light: #8f959b;
+  --color-typo-grey-light-2: #a9b1b8;
   --color-typo-grey: #48515d;
 
   --color-line-grey: rgb(226, 226, 226);
-  --color-primary: #2eca7f;
+  --color-primary: #00a8ff;
 }
 
 // Computed color
 $color-typo-grey-light: rgba(#48515d, 0.8);
 
+$color-primary: #2eca7f;
 $max-width: 64rem;
 
 $grid-gutter: 1rem;

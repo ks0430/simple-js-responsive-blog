@@ -3,6 +3,16 @@
   width: 100%;
   top: 0;
   z-index: 10;
+  transition: all 0.3s;
+  height: 6rem;
+
+  display: flex;
+  align-items: center;
+  &--white {
+    height: 4.5rem;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(black, 0.15);
+  }
 }
 
 .b-navbar {
@@ -10,10 +20,11 @@
   width: 100%;
   max-width: $max-width;
   margin: 0 auto;
-  height: 6rem;
   // Position
   align-items: center;
   justify-content: space-between;
+
+  // Js control stick navbar
 
   &__brand {
     &:link,
@@ -38,17 +49,6 @@
 
   &__list {
     display: flex;
-  }
-
-  // First item
-  &__item:first-child &__link {
-    &:link,
-    &:visited {
-      color: var(--color-typo-grey-dark);
-    }
-    &::after {
-      transform: scaleX(0.3);
-    }
   }
 
   &__link {
@@ -80,6 +80,16 @@
     }
     // border effects
     &:hover::after {
+      transform: scaleX(0.3);
+    }
+  }
+
+  &__link--active {
+    &:link,
+    &:visited {
+      color: var(--color-typo-grey-dark);
+    }
+    &::after {
       transform: scaleX(0.3);
     }
   }

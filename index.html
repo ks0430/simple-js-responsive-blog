@@ -20,13 +20,15 @@
     <!-- Main JS -->
     <script src="./js/index.js"></script>
     <!-- <script src="./bootstrap-4.2.1-dist/js/bootstrap.min.js"></script> -->
+    <!-- I'm not a robot -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <title>Portfolio</title>
   </head>
   <body>
     <div id="page" class="b-page">
-      <header class="b-header">
+      <header class="b-header"  id="header">
         <nav class="b-navbar">
-          <a class="b-navbar__brand" href="#">Evelyn <span>Chu</span></a>
+          <a class="b-navbar__brand" href="#home">Evelyn <span>Chu</span></a>
           <ul class="b-navbar__list">
             <li class="b-navbar__item">
               <a href="#home" class="b-navbar__link">Home</a>
@@ -52,7 +54,7 @@
             <div class="b-summary">
               <div class="b-summary__img-box">
                 <img
-                  src="./img/portfolio/photo.png"
+                  src="./img/portfolio/CG/chiaki-04.png"
                   alt="Protrait"
                   class="b-summary__img"
                 />
@@ -511,7 +513,7 @@
               <div class="b-title--lg">Contact</div>
             </div>
             <div class="b-details-wrap">
-              <div class="b-container">
+              <div class="b-container u-mb-2">
                 <div class="b-item-6">
                   <h3 class="b-title--md b-title--green u-mb-2">
                     Get in <span>Touch</span>
@@ -522,7 +524,7 @@
                       height="100%"
                       frameborder="0"
                       style="border:0"
-                      src="https://www.google.com/maps/embed/v1/place?q=437%20mians%20rd&key=AIzaSyB0tLj_ncPpkEsI4BknDM_fCLvx1Q_t_80"
+                      src="https://www.google.com/maps/embed/v1/place?q=437%20mains%20road&key=AIzaSyB0tLj_ncPpkEsI4BknDM_fCLvx1Q_t_80"
                       allowfullscreen
                     ></iframe>
                   </div>
@@ -549,7 +551,7 @@
                           </svg>
                         </div>
                         <p class="b-contact-info__detail">
-                          info@jiangren.com.au
+                          ore.c0430@gmail.com
                         </p>
                       </li>
                       <li class="b-contact-info__info-item">
@@ -578,22 +580,71 @@
                   </div>
                 </div>
                 <div class="b-item-6">
-                  <h3 class="b-title--md b-title--green">
+                  <h3 class="b-title--md b-title--green u-mb-2">
                     Contact <span>Form</span>
                   </h3>
-                  <form class="b-contact-form">
-                    <div class="b-contact-form__input-wrap">
-                      <div class="b-contact-form__icon-wrap">
-                        <svg class="b-contact-form__icon">
+                  <form class="b-form">
+                    <div class="b-form__group">
+                      <div class="b-form__icon-wrap">
+                        <svg class="b-form__icon">
                           <use
-                            xlink:href="../img/portfolio/icons/sprite.svg#icon-twitter"
+                            xlink:href="../img/portfolio/icons/sprite.svg#icon-user"
                           ></use>
                         </svg>
                       </div>
-                      <input type="text" class="b-contact-form__input" />
+                      <input
+                        type="text"
+                        class="b-form__input"
+                        id="name"
+                        required
+                      />
+                      <label for="name" class="b-form__label">Full name</label>
+                      <div class="b-form__input-border"></div>
                     </div>
-                    <div class="b-contact-form__validate">Validate</div>
-                    <button class="b-contact-form__button">Button</button>
+                    <div class="b-form__group">
+                      <div class="b-form__icon-wrap">
+                        <svg class="b-form__icon">
+                          <use
+                            xlink:href="../img/portfolio/icons/sprite.svg#icon-envelope"
+                          ></use>
+                        </svg>
+                      </div>
+                      <input
+                        type="email"
+                        class="b-form__input"
+                        id="email"
+                        required
+                      />
+                      <label for="email" class="b-form__label">Email</label>
+                      <div class="b-form__input-border"></div>
+                    </div>
+                    <div class="b-form__group">
+                      <div
+                        class="b-form__icon-wrap b-form__icon-wrap--textarea"
+                      >
+                        <svg class="b-form__icon">
+                          <use
+                            xlink:href="../img/portfolio/icons/sprite.svg#icon-bubble"
+                          ></use>
+                        </svg>
+                      </div>
+                      <textarea
+                        name="message"
+                        id="message"
+                        cols="5"
+                        rows="5"
+                        class="b-form__textarea"
+                      ></textarea>
+                      <label for="message" class="b-form__label">Message</label>
+                      <div class="b-form__input-border"></div>
+                    </div>
+                    <div class="b-form__group">
+                      <div
+                        class="g-recaptcha"
+                        data-sitekey="6Lcmf4UUAAAAAIMCKZta1V1nmj4l6JO-Y0csOS9g"
+                      ></div>
+                    </div>
+                    <button class="b-form__button">Send Message</button>
                   </form>
                 </div>
               </div>

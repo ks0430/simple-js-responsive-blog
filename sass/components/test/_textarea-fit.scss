@@ -1,0 +1,15 @@
+.test-2 {
+  display: flex;
+  background-color: bisque;
+
+  &__square {
+    @include flex-center;
+    background-color: black;
+  }
+
+  &__square-2 {
+    height: 2rem;
+    width: 3rem;
+    background-color: aquamarine;
+  }
+}

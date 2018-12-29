@@ -9,6 +9,8 @@
 // @import "./base/custom";
 
 @import "components/link";
+@import "components/input";
+@import "components/form";
 
 @import "base/utilities";
 @import "base/animation";
@@ -25,3 +27,6 @@
 @import "pages/services";
 @import "pages/blog";
 @import "pages/contact";
+
+// Testing files
+@import "components/test/textarea-fit";
