@@ -1,0 +1,36 @@
+.b-service {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  // padding: 2rem;
+
+  &__icon-wrap {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    background-color: var(--color-background-grey);
+    text-align: center;
+    display: flex;
+    transition: all 0.3s;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.8rem;
+    margin-top: 1rem;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0.5rem 0.8rem rgba(black, 0.15);
+    }
+  }
+
+  &__title {
+    margin-bottom: 1.2rem;
+  }
+
+  &__description {
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+}

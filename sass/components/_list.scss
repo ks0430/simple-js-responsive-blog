@@ -1,0 +1,17 @@
+.b-info-list {
+  &__item {
+    line-height: 2;
+    font-size: 0.9rem;
+    display: flex;
+  }
+
+  &__item-title {
+    font-weight: 500;
+    flex: 0 1 30%;
+  }
+
+  &__item-content {
+    flex: 1;
+    color: var(--color-typo-grey-light);
+  }
+}

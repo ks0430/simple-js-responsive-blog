@@ -1,7 +1,7 @@
+// Homepage Layout & unique setting
+
 .b-summary {
   //   Position children
-  display: flex;
-  align-items: center;
   padding: 3rem;
 
   //   Background
@@ -10,128 +10,21 @@
   background-size: cover;
   background-position: 80% 0;
 
+  // img-box position
   &__img-box {
-    //   Shrink, basic 30%
-    flex: 0 1 30%;
     position: relative;
-    margin-right: 2rem;
+    margin-right: auto;
+    max-height: 18rem;
+    height: 28vw;
+    margin-bottom: -25%; //unit is the img-box width
   }
 
-  &__img {
-    margin-bottom: -25%;
-    width: 100%;
-    height: auto;
-    border: 3px solid white;
-    box-shadow: 0 2px 1rem rgba(black, 0.2);
-
-    // animation
-    transition: all 0.3s;
-    transform: translateY(0);
-    &:hover {
-      transform: translateY(-0.5rem);
-      box-shadow: 0 15px 1.5rem rgba(black, 0.2);
-    }
-  }
-
-  &__description-box {
-    //   Grow remain spaces
-    flex: 1;
-
-    // Center children
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  // title-box position
+  &__title-box {
     color: white;
-  }
-
-  &__name {
-    font-size: 3.1rem;
-    font-weight: 700;
-    margin: 1.3rem 0;
-  }
-
-  &__job {
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-bottom: 1.3rem;
-  }
-
-  &__social-link-list {
-    display: flex;
-  }
-
-  &__social-link-item {
-    display: inline-block;
-    background-color: white;
-    border-radius: 50%;
-    width: 2.3rem;
-    height: 2.3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-
-    transition: all 0.2s;
-
-    &:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 3px 0.5rem rgba(black, 0.1);
-    }
-    // gutter between icons
-    &:not(:last-child) {
-      margin-right: 0.5rem;
-    }
-  }
-
-  &__icon {
-    height: 1rem;
-    width: 1rem;
-    fill: var(--color-typo-grey-light);
   }
 }
 
 .b-about-me {
-  padding: 4rem 3rem;
-  display: flex;
-  justify-content: space-between;
-
-  & > * {
-    flex: 0 0 48%;
-  }
-  &__description-box {
-  }
-
-  &__title {
-    font-weight: 700;
-    font-size: 1.3rem;
-    span {
-      color: var(--color-primary);
-    }
-    margin-bottom: 1rem;
-  }
-
-  &__content {
-    line-height: 1.5;
-    font-size: 0.9rem;
-  }
-
-  &__detail-box {
-  }
-
-  &__item {
-    line-height: 2;
-    font-size: 0.9rem;
-    display: flex;
-  }
-
-  &__item-title {
-    font-weight: 500;
-    flex: 0 1 30%;
-  }
-
-  &__item-content {
-    flex: 1;
-    color: var(--color-typo-grey-light);
-  }
+  padding: 4rem 3rem 3rem 3rem;
 }

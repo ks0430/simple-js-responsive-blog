@@ -14,7 +14,7 @@ $(document).ready(function() {
 
 // header stick handler - bind to document object
 stickHeaderHandler = () => {
-  if (window.pageYOffset >= 30) {
+  if (window.pageYOffset >= 20) {
     $("#header").addClass("b-header--white");
   } else {
     $("#header").removeClass("b-header--white");

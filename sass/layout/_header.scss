@@ -3,94 +3,20 @@
   width: 100%;
   top: 0;
   z-index: 10;
-  transition: all 0.3s;
   height: 6rem;
+  transition: all 0.3s;
 
+  // Position children
   display: flex;
-  align-items: center;
+
+  // Modifier: scroll to 30px use this style, js
   &--white {
     height: 4.5rem;
     background-color: white;
     box-shadow: 0 4px 6px rgba(black, 0.15);
   }
-}
 
-.b-navbar {
-  display: flex;
-  width: 100%;
-  max-width: $max-width;
-  margin: 0 auto;
-  // Position
-  align-items: center;
-  justify-content: space-between;
-
-  // Js control stick navbar
-
-  &__brand {
-    &:link,
-    &:visited {
-      display: inline-block;
-      font-family: "Montserrat", Helvetica, sans-serif;
-      font-weight: 500;
-      margin-right: auto;
-      font-size: 1.2rem;
-      color: var(--color-typo-grey-dark);
-    }
-
-    &:hover,
-    &:active {
-      cursor: pointer;
-    }
-
-    & span {
-      color: var(--color-primary);
-    }
-  }
-
-  &__list {
-    display: flex;
-  }
-
-  &__link {
-    &:link,
-    &:visited {
-      display: inline-block;
-      color: var(--color-typo-grey-light);
-      font-family: "Montserrat", Helvetica, sans-serif;
-      font-size: 0.9rem;
-      padding: 0.8rem 1.2rem;
-      position: relative;
-    }
-    &:hover,
-    &:active {
-      color: var(--color-typo-grey-dark);
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      height: 2px;
-      width: 100%;
-      transform: scaleX(0);
-      background-color: var(--color-primary);
-      transition: transform 0.2s;
-      transform-origin: center;
-    }
-    // border effects
-    &:hover::after {
-      transform: scaleX(0.3);
-    }
-  }
-
-  &__link--active {
-    &:link,
-    &:visited {
-      color: var(--color-typo-grey-dark);
-    }
-    &::after {
-      transform: scaleX(0.3);
-    }
+  &--mobile {
+    height: auto;
   }
 }

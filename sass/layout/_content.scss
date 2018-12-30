@@ -3,6 +3,7 @@
   // Set current # visible
   // otherwise push it from current document flow
   position: relative;
+
   & > section {
     visibility: hidden;
     opacity: 0;
@@ -44,21 +45,4 @@
 
 .b-details-wrap {
   padding: 2.5rem 3rem;
-}
-
-.b-page-title {
-  color: white;
-  // position
-  text-align: center;
-  padding: 2.8rem 0;
-  // backgournd
-  background-color: var(--color-primary);
-  background-image: url(../img/portfolio/sp_main_bg.png);
-  background-size: 60%;
-  background-repeat: no-repeat;
-  background-position: 70% center;
-}
-
-.b-section-title {
-  margin-bottom: 1.6rem;
 }

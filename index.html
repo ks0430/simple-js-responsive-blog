@@ -26,8 +26,8 @@
   </head>
   <body>
     <div id="page" class="b-page">
-      <header class="b-header"  id="header">
-        <nav class="b-navbar">
+      <header class="b-header b-header--mobile" id="header" center>
+        <!-- <nav class="b-navbar b-navbar--mobile">
           <a class="b-navbar__brand" href="#home">Evelyn <span>Chu</span></a>
           <ul class="b-navbar__list">
             <li class="b-navbar__item">
@@ -46,90 +46,127 @@
               <a href="#contact" class="b-navbar__link">Contact</a>
             </li>
           </ul>
+        </nav> -->
+        <nav class="b-navbar b-navbar--mobile">
+            <a class="b-navbar__brand" href="#home">Evelyn <span>Chu</span></a>
+            <input type="checkbox" id="navbar-mobile" class="b-navbar__mobile-checkbox">
+            <label for="navbar-mobile" class="b-navbar__mobile-label">                        
+              <svg class="b-navbar__mobile-svgicon">
+                <use xlink:href="../img/portfolio/icons/sprite.svg#icon-more"></use>
+              </svg>
+            </label>
+            <ul class="b-navbar__list">
+              <li class="b-navbar__item">
+                <a href="#home" class="b-navbar__link">Home</a>
+              </li>
+              <li class="b-navbar__item">
+                <a href="#resume" class="b-navbar__link">Resume</a>
+              </li>
+              <li class="b-navbar__item">
+                <a href="#services" class="b-navbar__link">Services</a>
+              </li>
+              <li class="b-navbar__item">
+                <a href="#blog" class="b-navbar__link">Blog</a>
+              </li>
+              <li class="b-navbar__item">
+                <a href="#contact" class="b-navbar__link">Contact</a>
+              </li>
+            </ul>
         </nav>
       </header>
       <main class="b-main">
         <section class="b-home" id="home">
           <div class="b-content">
             <div class="b-summary">
-              <div class="b-summary__img-box">
-                <img
-                  src="./img/portfolio/CG/chiaki-04.png"
-                  alt="Protrait"
-                  class="b-summary__img"
-                />
-              </div>
-              <div class="b-summary__description-box">
-                <h1 class="b-summary__name">Evelyn Chu</h1>
-                <h2 class="b-summary__job">Web designer</h2>
-                <ul class="b-summary__social-link-list">
-                  <li class="b-summary__social-link-item">
-                    <a href="#">
-                      <svg class="b-summary__icon">
-                        <use
-                          xlink:href="../img/portfolio/icons/sprite.svg#icon-twitter"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="b-summary__social-link-item">
-                    <a href="#">
-                      <svg class="b-summary__icon">
-                        <use
-                          xlink:href="../img/portfolio/icons/sprite.svg#icon-facebook"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="b-summary__social-link-item">
-                    <a href="#">
-                      <svg class="b-summary__icon">
-                        <use
-                          xlink:href="../img/portfolio/icons/sprite.svg#icon-instagram"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
+              <div class="b-container b-container--ycenter">
+                <div class="b-item-4">
+                  <div class="b-summary__img-box">
+                    <figure class="b-img b-img--white-border">
+                      <img
+                        src="./img/portfolio/CG/chiaki-05.png"
+                        alt="Protrait"
+                      />
+                    </figure>
+                  </div>  
+                </div>
+                <div class="b-item">
+                  <div class="b-summary__title-box">
+                    <div class="b-summary-title">               
+                      <h1 class="b-summary-title__name">Evelyn Chu</h1>
+                      <h2 class="b-summary-title__job">Web designer</h2>
+                      <ul class="b-summary-title__social-link-list">
+                        <li class="b-summary-title__social-link-item">
+                          <a href="#">
+                            <svg class="b-summary-title__icon">
+                              <use
+                                xlink:href="../img/portfolio/icons/sprite.svg#icon-twitter"
+                              ></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="b-summary-title__social-link-item">
+                          <a href="#">
+                            <svg class="b-summary-title__icon">
+                              <use
+                                xlink:href="../img/portfolio/icons/sprite.svg#icon-facebook"
+                              ></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="b-summary-title__social-link-item">
+                          <a href="#">
+                            <svg class="b-summary-title__icon">
+                              <use
+                                xlink:href="../img/portfolio/icons/sprite.svg#icon-instagram"
+                              ></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="b-about-me">
-              <div class="b-about-me__description-box">
-                <h3 class="b-about-me__title">About <span>Me</span></h3>
-                <p class="b-about-me__content">
-                  Hello! I'm Evelyn. Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Numquam dolores ipsam, esse, laboriosam
-                  molestiae dolorum iusto quos natus aperiam incidunt error ea
-                  debitis quaerat nemo a, labore autem maiores ab.
-                </p>
-              </div>
-              <div class="b-about-me__detail-box">
-                <ul>
-                  <li class="b-about-me__item">
-                    <span class="b-about-me__item-title">Age</span>
-                    <span class="b-about-me__item-content">23</span>
-                  </li>
-                  <li class="b-about-me__item">
-                    <span class="b-about-me__item-title">Residence</span>
-                    <span class="b-about-me__item-content">Australia</span>
-                  </li>
-                  <li class="b-about-me__item">
-                    <span class="b-about-me__item-title">Address</span>
-                    <span class="b-about-me__item-content">
-                      437 Mains Rd, Sunny Bank, QLD
-                    </span>
-                  </li>
-                  <li class="b-about-me__item">
-                    <span class="b-about-me__item-title">E-mail</span>
-                    <span class="b-about-me__item-content">
-                      <a href="#" class="b-link">ore.c0430@gmail.com</a>
-                    </span>
-                  </li>
-                  <li class="b-about-me__item">
-                    <span class="b-about-me__item-title">Phone</span>
-                    <span class="b-about-me__item-content">+61 0404160923</span>
-                  </li>
-                </ul>
+              <div class="b-container">
+                <div class="b-item-6">                  
+                  <h3 class="b-title--md b-title--green u-mb-xs">About <span>Me</span></h3>
+                  <p class="b-paragraph">
+                    Hello! I'm Evelyn. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Numquam dolores ipsam, esse, laboriosam
+                    molestiae dolorum iusto quos natus aperiam incidunt error ea
+                    debitis quaerat nemo a, labore autem maiores ab.
+                  </p>
+                </div>
+                <div class="b-item-6">
+                  <ul class="b-info-list">
+                    <li class="b-info-list__item">
+                      <span class="b-info-list__item-title">Age</span>
+                      <span class="b-info-list__item-content">23</span>
+                    </li>
+                    <li class="b-info-list__item">
+                      <span class="b-info-list__item-title">Residence</span>
+                      <span class="b-info-list__item-content">Australia</span>
+                    </li>
+                    <li class="b-info-list__item">
+                      <span class="b-info-list__item-title">Address</span>
+                      <span class="b-info-list__item-content">
+                        437 Mains Rd, Sunny Bank, QLD
+                      </span>
+                    </li>
+                    <li class="b-info-list__item">
+                      <span class="b-info-list__item-title">E-mail</span>
+                      <span class="b-info-list__item-content">
+                        <a href="#" class="b-link">ore.c0430@gmail.com</a>
+                      </span>
+                    </li>
+                    <li class="b-info-list__item">
+                      <span class="b-info-list__item-title">Phone</span>
+                      <span class="b-info-list__item-content">+61 0404160923</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -137,158 +174,160 @@
         <section class="b-resume" id="resume">
           <div class="b-content">
             <div class="b-page-title"><h2 class="b-title--lg">Resume</h2></div>
-            <div class="b-timeline-box-whole">
-              <div class="b-timeline-box">
-                <h3 class="b-title--md b-section-title">Projects</h3>
-                <ul class="b-timeline__list">
-                  <li class="b-timeline__item">
-                    <div class="b-timeline__dot">&nbsp;</div>
-                    <div class="b-timeline__content-box">
-                      <h4 class="b-title--sm b-timeline__title">Music Store</h4>
-                      <p class="b-timeline__timeinfo">
-                        <span class="b-timeline__time"> 2010 </span>
-                        <span class="b-timeline__company"> Apple Inc. </span>
-                      </p>
-                      <p class="b-timeline__description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Quis cum eum obcaecati. Laborum corrupti incidunt
-                        quam!
-                      </p>
-                    </div>
-                  </li>
-                  <li class="b-timeline__item">
-                    <div class="b-timeline__dot">&nbsp;</div>
-                    <div class="b-timeline__content-box">
-                      <h4 class="b-title--sm b-timeline__title">
-                        Virtual Simulation Software
-                      </h4>
-                      <p class="b-timeline__timeinfo">
-                        <span class="b-timeline__time"> 2010 </span>
-                        <span class="b-timeline__company"> Apple Inc. </span>
-                      </p>
-                      <p class="b-timeline__description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Incidunt facilis aspernatur atque amet, odio
-                        voluptatibus possimus enim. Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit. Incidunt facilis
-                        aspernatur atque amet, odio voluptatibus possimus enim.
-                      </p>
-                    </div>
-                  </li>
-                  <li class="b-timeline__item">
-                    <div class="b-timeline__dot">&nbsp;</div>
-                    <div class="b-timeline__content-box">
-                      <h4 class="b-title--sm b-timeline__title">PE Scaning</h4>
-                      <p class="b-timeline__timeinfo">
-                        <span class="b-timeline__time"> 2010 </span>
-                        <span class="b-timeline__company"> Apple Inc. </span>
-                      </p>
-                      <p class="b-timeline__description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Incidunt facilis aspernatur atque amet, odio
-                        voluptatibus possimus enim.
-                      </p>
-                    </div>
-                  </li>
-                </ul>
+            <div class="b-details-wrap">
+              <div class="b-container u-mb-2">
+                <div class="b-item-6">
+                  <h3 class="b-title--md u-mb-sm">Projects</h3>
+                  <ul class="b-timeline__list">
+                    <li class="b-timeline__item">
+                      <div class="b-timeline__dot">&nbsp;</div>
+                      <div class="b-timeline__content-box">
+                        <h4 class="b-title--sm b-timeline__title">Music Store</h4>
+                        <p class="b-timeline__timeinfo">
+                          <span class="b-timeline__time"> 2010 </span>
+                          <span class="b-timeline__company"> Apple Inc. </span>
+                        </p>
+                        <p class="b-timeline__description">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Quis cum eum obcaecati. Laborum corrupti incidunt
+                          quam!
+                        </p>
+                      </div>
+                    </li>
+                    <li class="b-timeline__item">
+                      <div class="b-timeline__dot">&nbsp;</div>
+                      <div class="b-timeline__content-box">
+                        <h4 class="b-title--sm b-timeline__title">
+                          Virtual Simulation Software
+                        </h4>
+                        <p class="b-timeline__timeinfo">
+                          <span class="b-timeline__time"> 2010 </span>
+                          <span class="b-timeline__company"> Apple Inc. </span>
+                        </p>
+                        <p class="b-timeline__description">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          Incidunt facilis aspernatur atque amet, odio
+                          voluptatibus possimus enim. Lorem ipsum dolor sit amet
+                          consectetur adipisicing elit. Incidunt facilis
+                          aspernatur atque amet, odio voluptatibus possimus enim.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="b-timeline__item">
+                      <div class="b-timeline__dot">&nbsp;</div>
+                      <div class="b-timeline__content-box">
+                        <h4 class="b-title--sm b-timeline__title">PE Scaning</h4>
+                        <p class="b-timeline__timeinfo">
+                          <span class="b-timeline__time"> 2010 </span>
+                          <span class="b-timeline__company"> Apple Inc. </span>
+                        </p>
+                        <p class="b-timeline__description">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          Incidunt facilis aspernatur atque amet, odio
+                          voluptatibus possimus enim.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="b-item-6">
+                  <h3 class="b-title--md u-mb-sm">Experience</h3>
+                  <ul class="b-timeline__list">
+                    <li class="b-timeline__item">
+                      <div class="b-timeline__dot">&nbsp;</div>
+                      <div class="b-timeline__content-box">
+                        <h4 class="b-title--sm b-timeline__title">
+                          Frontend-Developer
+                        </h4>
+                        <p class="b-timeline__timeinfo">
+                          <span class="b-timeline__time">
+                            Apr 2017 - Aug 2018
+                          </span>
+                          <span class="b-timeline__company"> Apple Inc. </span>
+                        </p>
+                        <p class="b-timeline__description">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          Rerum qui obcaecati neque illo tenetur eligendi
+                          cupiditate repellendus!
+                        </p>
+                      </div>
+                    </li>
+                    <li class="b-timeline__item">
+                      <div class="b-timeline__dot">&nbsp;</div>
+                      <div class="b-timeline__content-box">
+                        <h4 class="b-title--sm b-timeline__title">
+                          Web Designer
+                        </h4>
+                        <p class="b-timeline__timeinfo">
+                          <span class="b-timeline__time"> 2010 </span>
+                          <span class="b-timeline__company"> Apple Inc. </span>
+                        </p>
+                        <p class="b-timeline__description">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          Incidunt facilis aspernatur atque amet, odio
+                          voluptatibus possimus enim.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="b-timeline__item">
+                      <div class="b-timeline__dot">&nbsp;</div>
+                      <div class="b-timeline__content-box">
+                        <h4 class="b-title--sm b-timeline__title">
+                          Unity3D Developer
+                        </h4>
+                        <p class="b-timeline__timeinfo">
+                          <span class="b-timeline__time"> 2010 </span>
+                          <span class="b-timeline__company"> Apple Inc. </span>
+                        </p>
+                        <p class="b-timeline__description">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          Incidunt facilis aspernatur atque amet, odio
+                          voluptatibus possimus enim.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="b-timeline-box">
-                <h3 class="b-title--md b-section-title">Experience</h3>
-                <ul class="b-timeline__list">
-                  <li class="b-timeline__item">
-                    <div class="b-timeline__dot">&nbsp;</div>
-                    <div class="b-timeline__content-box">
-                      <h4 class="b-title--sm b-timeline__title">
-                        Frontend-Developer
-                      </h4>
-                      <p class="b-timeline__timeinfo">
-                        <span class="b-timeline__time">
-                          Apr 2017 - Aug 2018
-                        </span>
-                        <span class="b-timeline__company"> Apple Inc. </span>
-                      </p>
-                      <p class="b-timeline__description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Rerum qui obcaecati neque illo tenetur eligendi
-                        cupiditate repellendus!
-                      </p>
-                    </div>
-                  </li>
-                  <li class="b-timeline__item">
-                    <div class="b-timeline__dot">&nbsp;</div>
-                    <div class="b-timeline__content-box">
-                      <h4 class="b-title--sm b-timeline__title">
-                        Web Designer
-                      </h4>
-                      <p class="b-timeline__timeinfo">
-                        <span class="b-timeline__time"> 2010 </span>
-                        <span class="b-timeline__company"> Apple Inc. </span>
-                      </p>
-                      <p class="b-timeline__description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Incidunt facilis aspernatur atque amet, odio
-                        voluptatibus possimus enim.
-                      </p>
-                    </div>
-                  </li>
-                  <li class="b-timeline__item">
-                    <div class="b-timeline__dot">&nbsp;</div>
-                    <div class="b-timeline__content-box">
-                      <h4 class="b-title--sm b-timeline__title">
-                        Unity3D Developer
-                      </h4>
-                      <p class="b-timeline__timeinfo">
-                        <span class="b-timeline__time"> 2010 </span>
-                        <span class="b-timeline__company"> Apple Inc. </span>
-                      </p>
-                      <p class="b-timeline__description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Incidunt facilis aspernatur atque amet, odio
-                        voluptatibus possimus enim.
-                      </p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="b-skills-box-whole">
-              <div class="b-skills-box">
-                <h3 class="b-title--md b-title--green b-section-title">
-                  Design <span>Skills</span>
-                </h3>
-                <ul>
-                  <li class="b-skills__item">
-                    <h4 class="b-skills__title b-title--xs">Web Design</h4>
-                    <div class="b-skills__bar">&nbsp;</div>
-                  </li>
-                  <li class="b-skills__item">
-                    <h4 class="b-skills__title b-title--xs">Graphic Design</h4>
-                    <div class="b-skills__bar">&nbsp;</div>
-                  </li>
-                  <li class="b-skills__item">
-                    <h4 class="b-skills__title b-title--xs">Print Design</h4>
-                    <div class="b-skills__bar">&nbsp;</div>
-                  </li>
-                </ul>
-              </div>
-              <div class="b-skills-box">
-                <h3 class="b-title--md b-title--green b-section-title">
-                  Coding <span>Skills</span>
-                </h3>
-                <ul>
-                  <li class="b-skills__item">
-                    <h4 class="b-skills__title b-title--xs">CSS</h4>
-                    <div class="b-skills__bar">&nbsp;</div>
-                  </li>
-                  <li class="b-skills__item">
-                    <h4 class="b-skills__title b-title--xs">React</h4>
-                    <div class="b-skills__bar">&nbsp;</div>
-                  </li>
-                  <li class="b-skills__item">
-                    <h4 class="b-skills__title b-title--xs">Node JS</h4>
-                    <div class="b-skills__bar">&nbsp;</div>
-                  </li>
-                </ul>
+              <div class="b-container">
+                <div class="b-item-6">
+                  <h3 class="b-title--md b-title--green b-section-title u-mb-sm">
+                    Design <span>Skills</span>
+                  </h3>
+                  <ul>
+                    <li class="b-skill__item">
+                      <h4 class="b-skill__title b-title--xs">Web Design</h4>
+                      <div class="b-skill__bar">&nbsp;</div>
+                    </li>
+                    <li class="b-skill__item">
+                      <h4 class="b-skill__title b-title--xs">Graphic Design</h4>
+                      <div class="b-skill__bar">&nbsp;</div>
+                    </li>
+                    <li class="b-skill__item">
+                      <h4 class="b-skill__title b-title--xs">Print Design</h4>
+                      <div class="b-skill__bar">&nbsp;</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="b-item-6">
+                  <h3 class="b-title--md b-title--green b-section-title u-mb-sm">
+                    Coding <span>Skills</span>
+                  </h3>
+                  <ul>
+                    <li class="b-skill__item">
+                      <h4 class="b-skill__title b-title--xs">CSS</h4>
+                      <div class="b-skill__bar">&nbsp;</div>
+                    </li>
+                    <li class="b-skill__item">
+                      <h4 class="b-skill__title b-title--xs">React</h4>
+                      <div class="b-skill__bar">&nbsp;</div>
+                    </li>
+                    <li class="b-skill__item">
+                      <h4 class="b-skill__title b-title--xs">Node JS</h4>
+                      <div class="b-skill__bar">&nbsp;</div>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -300,51 +339,57 @@
             </div>
             <div class="b-details-wrap">
               <div class="b-my-services">
-                <h3 class="b-section-title b-title--md b-title--green">
+                <h3 class="b-section-title b-title--md b-title--green u-mb-sm">
                   My <span>Services</span>
                 </h3>
-                <ul class="b-my-services__list">
-                  <li class="b-my-services__item">
-                    <div class="b-my-services__icon-wrap">&times;</div>
-                    <h4 class="b-my-services__title b-title--sm">Web Design</h4>
-                    <p class="b-my-services__description">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    </p>
+                <ul class="b-container u-mb-lg">
+                  <li class="b-item-3">
+                    <div class="b-service">
+                      <div class="b-service__icon-wrap">&times;</div>
+                      <h4 class="b-service__title b-title--sm">Web Design</h4>
+                      <p class="b-service__description">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      </p>
+                    </div>
                   </li>
-                  <li class="b-my-services__item">
-                    <div class="b-my-services__icon-wrap">&times;</div>
-                    <h4 class="b-my-services__title b-title--sm">Web Design</h4>
-                    <p class="b-my-services__description">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Ducimus a, animi.
-                    </p>
+                  <li class="b-item-3">
+                      <div class="b-service">
+                        <div class="b-service__icon-wrap">&times;</div>
+                        <h4 class="b-service__title b-title--sm">Web Design</h4>
+                        <p class="b-service__description">
+                          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        </p>
+                      </div>
                   </li>
-                  <li class="b-my-services__item">
-                    <div class="b-my-services__icon-wrap">&times;</div>
-                    <h4 class="b-my-services__title b-title--sm">Web Design</h4>
-                    <p class="b-my-services__description">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Ducimus a, animi accusamus magni culpa neque.
-                    </p>
+                  <li class="b-item-3">
+                      <div class="b-service">
+                        <div class="b-service__icon-wrap">&times;</div>
+                        <h4 class="b-service__title b-title--sm">Web Design</h4>
+                        <p class="b-service__description">
+                          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        </p>
+                      </div>
                   </li>
-                  <li class="b-my-services__item">
-                    <div class="b-my-services__icon-wrap">&times;</div>
-                    <h4 class="b-my-services__title b-title--sm">Web Design</h4>
-                    <p class="b-my-services__description">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    </p>
+                  <li class="b-item-3">
+                      <div class="b-service">
+                        <div class="b-service__icon-wrap">&times;</div>
+                        <h4 class="b-service__title b-title--sm">Web Design</h4>
+                        <p class="b-service__description">
+                          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        </p>
+                      </div>
                   </li>
                 </ul>
               </div>
               <div class="b-clients">
-                <h3 class="b-title--md b-title--green">Clients</h3>
-                <ul class="b-clients__list">
-                  <li class="b-clients__item"><p>logo</p></li>
-                  <li class="b-clients__item"><p>logo</p></li>
-                  <li class="b-clients__item"><p>logo</p></li>
-                  <li class="b-clients__item"><p>logo</p></li>
-                  <li class="b-clients__item"><p>logo</p></li>
-                  <li class="b-clients__item"><p>logo</p></li>
+                <h3 class="b-title--md b-title--green u-mb-lg">Clients</h3>
+                <ul class="b-container u-mb-xs">
+                  <li class="b-item-2"><div class="b-logo--square"><span>logo</span></div></li>
+                  <li class="b-item-2"><div class="b-logo--square"><span>logo</span></div></li>
+                  <li class="b-item-2"><div class="b-logo--square"><span>logo</span></div></li>
+                  <li class="b-item-2"><div class="b-logo--square"><span>logo</span></div></li>
+                  <li class="b-item-2"><div class="b-logo--square"><span>logo</span></div></li>
+                  <li class="b-item-2"><div class="b-logo--square"><span>logo</span></div></li>
                 </ul>
               </div>
             </div>
@@ -515,10 +560,10 @@
             <div class="b-details-wrap">
               <div class="b-container u-mb-2">
                 <div class="b-item-6">
-                  <h3 class="b-title--md b-title--green u-mb-2">
+                  <h3 class="b-title--md b-title--green u-mb-lg">
                     Get in <span>Touch</span>
                   </h3>
-                  <div class="b-google-map u-mb-2">
+                  <div class="b-google-map u-mb-lg">
                     <iframe
                       width="100%"
                       height="100%"
@@ -580,7 +625,7 @@
                   </div>
                 </div>
                 <div class="b-item-6">
-                  <h3 class="b-title--md b-title--green u-mb-2">
+                  <h3 class="b-title--md b-title--green u-mb-lg">
                     Contact <span>Form</span>
                   </h3>
                   <form class="b-form">

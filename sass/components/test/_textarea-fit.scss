@@ -5,11 +5,61 @@
   &__square {
     @include flex-center;
     background-color: black;
+    // height: 100%; // 100% will refer to its child
   }
 
   &__square-2 {
     height: 2rem;
     width: 3rem;
     background-color: aquamarine;
+  }
+}
+
+.tb-margin-auto {
+  width: 20rem;
+  height: 20rem;
+  background-color: aquamarine;
+  margin: 0 auto;
+  // display: block;
+  display: flex;
+  align-items: flex-start;
+  &__child {
+    // height: 3rem;
+    display: block;
+    margin-right: auto;
+    height: 3rem;
+    width: 3rem;
+    background-color: black;
+    color: white;
+  }
+
+  &__child2 {
+    background-color: darkgoldenrod;
+    display: block;
+    width: 20%;
+    height: 3rem;
+    margin: auto 0;
+  }
+  & img {
+    width: 30%;
+    height: auto;
+    display: block;
+    // margin: 0 auto;
+  }
+}
+
+.tb-flex-box {
+  width: 50rem;
+  margin: 0 auto;
+  width: 40rem;
+  overflow: hidden;
+
+  &__img-box {
+    height: 10rem;
+    overflow: hidden;
+  }
+
+  &__img {
+    height: 100%;
   }
 }

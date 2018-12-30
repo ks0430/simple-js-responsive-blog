@@ -1,3 +1,34 @@
 .u-mb-2 {
   margin-bottom: 2rem;
 }
+
+.u-mb-xs {
+  margin-bottom: 1rem;
+}
+
+.u-mb-sm {
+  margin-bottom: 1.6rem;
+}
+
+.u-mb-md {
+  margin-bottom: 2rem;
+}
+
+.u-mb-lg {
+  margin-bottom: 2.6rem;
+}
+
+// Sometimes the effect of margin auto equals flexbox
+
+.u-mlr-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.u-ml-auto {
+  margin-left: auto;
+}
+
+.ul-mr-auto {
+  margin-right: auto;
+}

@@ -1,11 +1,6 @@
-.b-clients {
-  &__list {
-    display: flex;
-    justify-content: space-around;
-    margin: 3rem 0;
-  }
-
-  &__item {
+.b-logo {
+  &--square {
+    margin: 1.4rem auto;
     height: 3.5rem;
     width: 3.5rem;
     background-color: var(--color-typo-grey-light);
@@ -16,7 +11,7 @@
     align-items: center;
     transform: rotate(45deg);
 
-    & p {
+    & span {
       transform: rotate(-45deg);
       font-size: 0.9rem;
     }

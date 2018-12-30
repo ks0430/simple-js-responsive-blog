@@ -3,3 +3,34 @@
   justify-content: center;
   align-items: center;
 }
+
+/*
+  Respond manager
+  37.5em => 600px
+  56.23em => 900px
+  75em => 1200px
+  112.5em => 1800px
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-port {
+    @media (max-width: 56.23em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+  @if $breakpoint == big-desktop {
+    @media (max-width: 112.5em) {
+      @content;
+    }
+  }
+}

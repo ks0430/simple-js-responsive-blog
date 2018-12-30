@@ -1,0 +1,119 @@
+.b-card {
+  flex: 0 1 47%;
+  box-shadow: 0 0 1rem rgba(black, 0.1);
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  //   each line gutter
+  margin: 0.8rem 0;
+  border-radius: 3px;
+  overflow: hidden;
+
+  //   Resposive card size: change with viewport width, when arrive max-width scale both x & y deirection.
+  height: 32vw; // 1024/(20*16)=28.125
+  max-height: 20rem;
+
+  box-shadow: 0 0 0.5rem rgba(black, 0.2);
+  transition: all 0.2s;
+
+  &:hover {
+    box-shadow: 0 0 1rem rgba(black, 0.2);
+  }
+
+  //   justify-content: space-between;
+  &__tag {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    background-color: white;
+    color: var(--color-primary);
+    box-shadow: 0 0 0.1rem rgba(black, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    z-index: 31;
+  }
+  &__day {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+  }
+  &__month {
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+
+  &__img-wrap {
+    flex: 0 1 70%;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    background-color: rgb(241, 241, 241);
+
+    // Position the image
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    // If not define parent height, then img will cover it's height. Remain unuse space.
+    & img {
+      position: relative;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__mask {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 30;
+    transition: all 0.2s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background-color: rgba(39, 41, 44, 0.589);
+      cursor: pointer;
+    }
+  }
+
+  &__svgicon {
+    fill: transparent;
+    width: 2.8rem;
+    height: 2.8rem;
+    transition: all 0.2s;
+  }
+
+  &__mask:hover &__svgicon {
+    fill: white;
+  }
+
+  &__description-wrap {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-around;
+    align-items: center;
+    padding: 1rem 1rem;
+  }
+  &__type {
+    font-size: 0.8rem;
+    color: var(--color-typo-grey-light);
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  &__title {
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+}

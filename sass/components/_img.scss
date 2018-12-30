@@ -1,0 +1,29 @@
+// CSS Trick
+// If container not set height & width, then will use img origin width & height.
+//  If image and container not set width & height, then will overflow, break flexbox.
+
+.b-img {
+  overflow: hidden;
+  //   Important: if not set width & height. Then img-box will refer to img size.
+  width: 100%;
+  height: 100%;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &--white-border {
+    border: 3px solid white;
+    box-shadow: 0 2px 1rem rgba(black, 0.2);
+    // animation
+    transition: all 0.3s;
+    transform: translateY(0);
+
+    &:hover {
+      transform: translateY(-0.5rem);
+      box-shadow: 0 15px 1.5rem rgba(black, 0.2);
+    }
+  }
+}
