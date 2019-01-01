@@ -44,10 +44,13 @@
 
   @include respond(tab-port) {
     margin: 0 1rem;
-    margin-top: 4rem;
+    margin-top: 5rem;
   }
 }
 
 .b-details-wrap {
   padding: 2.5rem 3rem;
+  @include respond(phone) {
+    padding: 1rem;
+  }
 }
