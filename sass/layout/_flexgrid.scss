@@ -49,7 +49,7 @@
   }
 
   .b-item-2 {
-    flex: 0 1 calc((100% - 4 *#{$grid-gutter}) / 5);
+    flex: 0 1 calc((100% - 5 *#{$grid-gutter}) / 6);
   }
 
   .b-item-12--md {
@@ -79,7 +79,7 @@
 
   .b-item-2--md {
     @include respond(tab-port2) {
-      flex: 0 1 calc((100% - 4 *#{$grid-gutter}) / 5);
+      flex: 0 1 calc((100% - 5 *#{$grid-gutter}) / 6);
     }
   }
 
@@ -110,7 +110,7 @@
 
   .b-item-2--sm {
     @include respond(phone) {
-      flex: 0 1 calc((100% - 4 *#{$grid-gutter}) / 5);
+      flex: 0 1 calc((100% - 5 *#{$grid-gutter}) / 6);
     }
   }
 }
