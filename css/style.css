@@ -227,7 +227,7 @@ a:link, a:visited {
 
 @media (max-width: 37.5em) {
   html {
-    font-size: 75%; } }
+    font-size: 85%; } }
 
 body {
   box-sizing: border-box;
@@ -819,7 +819,7 @@ a:hover {
         font-size: 0.7rem; } }
     @media (max-width: 37.5em) {
       .b-card__type {
-        font-size: 1rem; } }
+        font-size: 0.7rem; } }
   .b-card__title {
     margin: auto 0;
     font-size: 0.9rem;
@@ -831,7 +831,7 @@ a:hover {
         line-height: 1.5; } }
     @media (max-width: 37.5em) {
       .b-card__title {
-        font-size: 1.2rem;
+        font-size: 0.8rem;
         line-height: 1.5; } }
 
 .b-container {
