@@ -1,8 +1,7 @@
 .b-container {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -$grid-gutter;
-  margin-right: -$grid-gutter;
+  justify-content: space-between;
 
   &--ycenter {
     align-items: center;
@@ -26,7 +25,6 @@
 
   //   Children - fixed margin
   & [class*="b-item"] {
-    padding: 0 $grid-gutter;
     flex: 1;
   }
 
@@ -39,19 +37,19 @@
   }
 
   .b-item-6 {
-    flex: 0 1 50%;
+    flex: 0 1 calc((100% - #{$grid-gutter}) / 2);
   }
 
   .b-item-4 {
-    flex: 0 1 33.3333333%;
+    flex: 0 1 calc((100% - 2 *#{$grid-gutter}) / 3);
   }
 
   .b-item-3 {
-    flex: 0 1 25%;
+    flex: 0 1 calc((100% - 3 *#{$grid-gutter}) / 4);
   }
 
   .b-item-2 {
-    flex: 0 1 16.66666666%;
+    flex: 0 1 calc((100% - 4 *#{$grid-gutter}) / 5);
   }
 
   .b-item-12--md {
@@ -63,25 +61,25 @@
 
   .b-item-6--md {
     @include respond(tab-port2) {
-      flex: 0 1 50%;
+      flex: 0 1 calc((100% - #{$grid-gutter}) / 2);
     }
   }
 
   .b-item-4--md {
     @include respond(tab-port2) {
-      flex: 0 1 33.3333333%;
+      flex: 0 1 calc((100% - 2 *#{$grid-gutter}) / 3);
     }
   }
 
   .b-item-3--md {
     @include respond(tab-port2) {
-      flex: 0 1 25%;
+      flex: 0 1 calc((100% - 3 *#{$grid-gutter}) / 4);
     }
   }
 
   .b-item-2--md {
     @include respond(tab-port2) {
-      flex: 0 1 16.66666666%;
+      flex: 0 1 calc((100% - 4 *#{$grid-gutter}) / 5);
     }
   }
 
@@ -94,25 +92,25 @@
 
   .b-item-6--sm {
     @include respond(phone) {
-      flex: 0 1 50%;
+      flex: 0 1 calc((100% - 4 *#{$grid-gutter}) / 2);
     }
   }
 
   .b-item-4--sm {
     @include respond(phone) {
-      flex: 0 1 33.3333333%;
+      flex: 0 1 calc((100% - 4 *#{$grid-gutter}) / 3);
     }
   }
 
   .b-item-3--sm {
     @include respond(phone) {
-      flex: 0 1 25%;
+      flex: 0 1 calc((100% - 4 *#{$grid-gutter}) / 4);
     }
   }
 
   .b-item-2--sm {
     @include respond(phone) {
-      flex: 0 1 16.66666666%;
+      flex: 0 1 calc((100% - 4 *#{$grid-gutter}) / 5);
     }
   }
 }
