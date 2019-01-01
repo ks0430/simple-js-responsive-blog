@@ -1,6 +1,7 @@
 $(document).ready(function() {
   console.log("Document ready!");
 
+  window.location.replace("./#home");
   $(window).scroll(() => {
     // Header: change stick header background
     // if use arrow function, then this will bind to window object.
@@ -10,8 +11,6 @@ $(document).ready(function() {
   // Input focus label change handler
   inputFocusHandler();
   navbarLinkHandler();
-
-  // checkbox
 });
 
 // header stick handler - bind to document object
