@@ -41,6 +41,11 @@
   box-shadow: 0 0.8rem 1.5rem rgba(black, 0.15);
   position: relative;
   z-index: 5;
+
+  @include respond(tab-port) {
+    margin: 0 1rem;
+    margin-top: 4rem;
+  }
 }
 
 .b-details-wrap {

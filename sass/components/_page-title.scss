@@ -9,4 +9,8 @@
   background-size: 60%;
   background-repeat: no-repeat;
   background-position: 70% center;
+
+  @include respond(phone) {
+    padding: 2rem;
+  }
 }

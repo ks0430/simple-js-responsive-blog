@@ -19,6 +19,10 @@ body {
   &--lg {
     font-size: 2.6rem;
     font-weight: 700;
+
+    @include respond(phone) {
+      font-size: 2rem;
+    }
   }
   &--xl {
     font-size: 3.1rem;

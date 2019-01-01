@@ -16,7 +16,7 @@
     box-shadow: 0 4px 6px rgba(black, 0.15);
   }
 
-  &--mobile {
+  @include respond(tab-port) {
     height: auto;
   }
 }

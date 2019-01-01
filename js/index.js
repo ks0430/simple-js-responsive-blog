@@ -10,6 +10,8 @@ $(document).ready(function() {
   // Input focus label change handler
   inputFocusHandler();
   navbarLinkHandler();
+
+  // checkbox
 });
 
 // header stick handler - bind to document object
@@ -50,7 +52,12 @@ navbarLinkHandler = () => {
   let link = $(".b-navbar__link");
   console.log(link);
   link.click(function() {
+    // active current link: white underline
     link.removeClass("b-navbar__link--active");
     $(this).addClass("b-navbar__link--active");
+    // when in mobile mode, close current navbar, change checked
+
+    // Close mobile menu, set checkbox to false.
+    $("#navbar-mobile")[0].checked = false;
   });
 };

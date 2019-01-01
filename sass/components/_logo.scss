@@ -11,6 +11,10 @@
     align-items: center;
     transform: rotate(45deg);
 
+    @include respond(tab-port2) {
+      margin: 2.5rem auto;
+    }
+
     & span {
       transform: rotate(-45deg);
       font-size: 0.9rem;

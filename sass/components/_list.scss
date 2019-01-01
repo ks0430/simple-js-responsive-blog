@@ -1,4 +1,7 @@
 .b-info-list {
+  @include respond(tab-port2) {
+    margin-top: 1rem;
+  }
   &__item {
     line-height: 2;
     font-size: 0.9rem;

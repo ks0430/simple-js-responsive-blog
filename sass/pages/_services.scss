@@ -26,4 +26,8 @@
       cursor: pointer;
     }
   }
+
+  @include respond(tab-port2) {
+    margin-top: 2rem;
+  }
 }

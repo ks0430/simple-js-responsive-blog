@@ -9,17 +9,13 @@
       href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700"
       rel="stylesheet"
     />
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./bootstrap-4.2.1-dist/css/bootstrap.css" />
     <!-- Bootsrap JS -->
     <script src="./bootstrap-4.2.1-dist/dependecies/jquery.js"></script>
     <script src="./bootstrap-4.2.1-dist/dependecies/popper.min.js"></script>
-    <script src="./bootstrap-4.2.1-dist/js/bootstrap.js"></script>
     <!-- Main css (Include BS) -->
     <link rel="stylesheet" href="./css/style.css" />
     <!-- Main JS -->
     <script src="./js/index.js"></script>
-    <!-- <script src="./bootstrap-4.2.1-dist/js/bootstrap.min.js"></script> -->
     <!-- I'm not a robot -->
     <script src="https://www.google.com/recaptcha/api.js"></script>
     <title>Portfolio</title>
@@ -27,27 +23,7 @@
   <body>
     <div id="page" class="b-page">
       <header class="b-header b-header--mobile" id="header" center>
-        <!-- <nav class="b-navbar b-navbar--mobile">
-          <a class="b-navbar__brand" href="#home">Evelyn <span>Chu</span></a>
-          <ul class="b-navbar__list">
-            <li class="b-navbar__item">
-              <a href="#home" class="b-navbar__link">Home</a>
-            </li>
-            <li class="b-navbar__item">
-              <a href="#resume" class="b-navbar__link">Resume</a>
-            </li>
-            <li class="b-navbar__item">
-              <a href="#services" class="b-navbar__link">Services</a>
-            </li>
-            <li class="b-navbar__item">
-              <a href="#blog" class="b-navbar__link">Blog</a>
-            </li>
-            <li class="b-navbar__item">
-              <a href="#contact" class="b-navbar__link">Contact</a>
-            </li>
-          </ul>
-        </nav> -->
-        <nav class="b-navbar b-navbar--mobile">
+        <nav class="b-navbar">
             <a class="b-navbar__brand" href="#home">Evelyn <span>Chu</span></a>
             <input type="checkbox" id="navbar-mobile" class="b-navbar__mobile-checkbox">
             <label for="navbar-mobile" class="b-navbar__mobile-label">                        
@@ -79,7 +55,7 @@
           <div class="b-content">
             <div class="b-summary">
               <div class="b-container b-container--ycenter">
-                <div class="b-item-4">
+                <div class="b-item-4 b-item-12--md">
                   <div class="b-summary__img-box">
                     <figure class="b-img b-img--white-border">
                       <img
@@ -89,7 +65,7 @@
                     </figure>
                   </div>  
                 </div>
-                <div class="b-item">
+                <div class="b-item b-item-12--md">
                   <div class="b-summary__title-box">
                     <div class="b-summary-title">               
                       <h1 class="b-summary-title__name">Evelyn Chu</h1>
@@ -130,7 +106,7 @@
             </div>
             <div class="b-about-me">
               <div class="b-container">
-                <div class="b-item-6">                  
+                <div class="b-item-6  b-item-12--md">                  
                   <h3 class="b-title--md b-title--green u-mb-xs">About <span>Me</span></h3>
                   <p class="b-paragraph">
                     Hello! I'm Evelyn. Lorem ipsum dolor sit amet consectetur
@@ -139,7 +115,7 @@
                     debitis quaerat nemo a, labore autem maiores ab.
                   </p>
                 </div>
-                <div class="b-item-6">
+                <div class="b-item-6  b-item-12--md">
                   <ul class="b-info-list">
                     <li class="b-info-list__item">
                       <span class="b-info-list__item-title">Age</span>
@@ -176,7 +152,7 @@
             <div class="b-page-title"><h2 class="b-title--lg">Resume</h2></div>
             <div class="b-details-wrap">
               <div class="b-container u-mb-2">
-                <div class="b-item-6">
+                <div class="b-item-6 b-item-12--md u-mb-md--md">
                   <h3 class="b-title--md u-mb-sm">Projects</h3>
                   <ul class="b-timeline__list">
                     <li class="b-timeline__item">
@@ -230,7 +206,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="b-item-6">
+                <div class="b-item-6 b-item-12--md">
                   <h3 class="b-title--md u-mb-sm">Experience</h3>
                   <ul class="b-timeline__list">
                     <li class="b-timeline__item">
@@ -290,7 +266,7 @@
                 </div>
               </div>
               <div class="b-container">
-                <div class="b-item-6">
+                <div class="b-item-6 b-item-12--md u-mb-md--md">
                   <h3 class="b-title--md b-title--green b-section-title u-mb-sm">
                     Design <span>Skills</span>
                   </h3>
@@ -309,7 +285,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="b-item-6">
+                <div class="b-item-6 b-item-12--md">
                   <h3 class="b-title--md b-title--green b-section-title u-mb-sm">
                     Coding <span>Skills</span>
                   </h3>
@@ -343,7 +319,7 @@
                   My <span>Services</span>
                 </h3>
                 <ul class="b-container u-mb-lg">
-                  <li class="b-item-3">
+                  <li class="b-item-3 b-item-6--md b-item-12--sm ">
                     <div class="b-service">
                       <div class="b-service__icon-wrap">&times;</div>
                       <h4 class="b-service__title b-title--sm">Web Design</h4>
@@ -352,7 +328,7 @@
                       </p>
                     </div>
                   </li>
-                  <li class="b-item-3">
+                  <li class="b-item-3 b-item-6--md b-item-12--sm">
                       <div class="b-service">
                         <div class="b-service__icon-wrap">&times;</div>
                         <h4 class="b-service__title b-title--sm">Web Design</h4>
@@ -361,7 +337,7 @@
                         </p>
                       </div>
                   </li>
-                  <li class="b-item-3">
+                  <li class="b-item-3 b-item-6--md b-item-12--sm">
                       <div class="b-service">
                         <div class="b-service__icon-wrap">&times;</div>
                         <h4 class="b-service__title b-title--sm">Web Design</h4>
@@ -370,7 +346,7 @@
                         </p>
                       </div>
                   </li>
-                  <li class="b-item-3">
+                  <li class="b-item-3 b-item-6--md b-item-12--sm">
                       <div class="b-service">
                         <div class="b-service__icon-wrap">&times;</div>
                         <h4 class="b-service__title b-title--sm">Web Design</h4>
@@ -384,12 +360,12 @@
               <div class="b-clients">
                 <h3 class="b-title--md b-title--green u-mb-lg">Clients</h3>
                 <ul class="b-container u-mb-xs">
-                  <li class="b-item-2"><div class="b-logo--square"><span>logo</span></div></li>
-                  <li class="b-item-2"><div class="b-logo--square"><span>logo</span></div></li>
-                  <li class="b-item-2"><div class="b-logo--square"><span>logo</span></div></li>
-                  <li class="b-item-2"><div class="b-logo--square"><span>logo</span></div></li>
-                  <li class="b-item-2"><div class="b-logo--square"><span>logo</span></div></li>
-                  <li class="b-item-2"><div class="b-logo--square"><span>logo</span></div></li>
+                  <li class="b-item-2 b-item-4--md b-item-6--sm"><div class="b-logo--square"><span>logo</span></div></li>
+                  <li class="b-item-2 b-item-4--md b-item-6--sm"><div class="b-logo--square"><span>logo</span></div></li>
+                  <li class="b-item-2 b-item-4--md b-item-6--sm"><div class="b-logo--square"><span>logo</span></div></li>
+                  <li class="b-item-2 b-item-4--md b-item-6--sm"><div class="b-logo--square"><span>logo</span></div></li>
+                  <li class="b-item-2 b-item-4--md b-item-6--sm"><div class="b-logo--square"><span>logo</span></div></li>
+                  <li class="b-item-2 b-item-4--md b-item-6--sm"><div class="b-logo--square"><span>logo</span></div></li>
                 </ul>
               </div>
             </div>
@@ -559,7 +535,7 @@
             </div>
             <div class="b-details-wrap">
               <div class="b-container u-mb-2">
-                <div class="b-item-6">
+                <div class="b-item-6 b-item-12--md u-mb-md--md">
                   <h3 class="b-title--md b-title--green u-mb-lg">
                     Get in <span>Touch</span>
                   </h3>
@@ -624,7 +600,7 @@
                     </ul>
                   </div>
                 </div>
-                <div class="b-item-6">
+                <div class="b-item-6 b-item-12--md">
                   <h3 class="b-title--md b-title--green u-mb-lg">
                     Contact <span>Form</span>
                   </h3>

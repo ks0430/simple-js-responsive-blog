@@ -12,7 +12,8 @@
     "node-sass": "^4.11.0"
   },
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css"
   },
   "author": "",
   "license": "ISC"

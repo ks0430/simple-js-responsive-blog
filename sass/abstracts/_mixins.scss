@@ -18,8 +18,13 @@
       @content;
     }
   }
+  @if $breakpoint == tab-port2 {
+    @media (max-width: 51.375em) {
+      @content;
+    }
+  }
   @if $breakpoint == tab-port {
-    @media (max-width: 56.23em) {
+    @media (max-width: 66.875em) {
       @content;
     }
   }
