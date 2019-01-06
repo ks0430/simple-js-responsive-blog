@@ -1,0 +1,60 @@
+.b-google-map {
+  height: 10rem;
+}
+
+.b-contact-info {
+  &__info-list {
+  }
+
+  &__info-item {
+    display: flex;
+    align-items: center;
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__icon-wrap {
+    background-color: var(--color-background-grey);
+    border-radius: 50%;
+    margin-right: 1rem;
+
+    height: 2.3rem;
+    width: 2.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 1.1rem;
+    height: 1.1rem;
+    fill: var(--color-primary);
+  }
+
+  &__detail {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+}
+
+.b-contact-form {
+  &__input-wrap {
+  }
+
+  &__icon-wrap {
+  }
+
+  &__icon {
+  }
+
+  &__input {
+  }
+
+  &__validate {
+  }
+
+  &__button {
+  }
+}

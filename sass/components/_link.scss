@@ -1,0 +1,12 @@
+.b-link {
+  &:link,
+  &:visited {
+    color: var(--color-primary);
+    transition: all 0.2s;
+  }
+
+  &:hover,
+  &:active {
+    color: darken($color: #2eca7f, $amount: 10%);
+  }
+}

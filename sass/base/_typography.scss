@@ -1,5 +1,43 @@
 body {
-  font-family: "Lato", sans-serif;
-  box-sizing: border-box;
-  font-size: 1.6rem;
+  // font-size: 1.6rem;
+  // font-family: lato;
+}
+
+.b-title {
+  &--xs {
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+  &--sm {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  &--md {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+  &--lg {
+    font-size: 2.6rem;
+    font-weight: 700;
+
+    @include respond(phone) {
+      font-size: 2rem;
+    }
+  }
+  &--xl {
+    font-size: 3.1rem;
+    font-weight: 600;
+  }
+
+  &--green {
+    font-weight: 700;
+    & span {
+      color: var(--color-primary);
+    }
+  }
+}
+
+.b-paragraph {
+  line-height: 1.5;
+  font-size: 0.9rem;
 }

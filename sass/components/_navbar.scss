@@ -1,0 +1,163 @@
+.b-navbar {
+  width: 100%;
+  max-width: $max-width;
+  height: 3rem;
+
+  // To parent
+  margin: auto;
+  // To children
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include respond(tab-port) {
+    width: 100%;
+    max-width: 100%;
+    height: 4rem;
+    background-color: var(--color-primary);
+    padding: 0 1rem;
+  }
+
+  &__brand {
+    &:link,
+    &:visited {
+      display: inline-block;
+      font-family: "Montserrat", Helvetica, sans-serif;
+      font-weight: 500;
+      margin-right: auto;
+      font-size: 1.2rem;
+      color: var(--color-typo-grey-dark);
+
+      @include respond(tab-port) {
+        color: white;
+      }
+    }
+
+    &:hover,
+    &:active {
+      cursor: pointer;
+    }
+
+    & span {
+      color: var(--color-primary);
+
+      @include respond(tab-port) {
+        color: white;
+      }
+    }
+  }
+
+  &__mobile-checkbox {
+    display: none;
+  }
+
+  &__mobile-label {
+    display: none;
+    &:hover {
+      cursor: pointer;
+    }
+
+    @include respond(tab-port) {
+      display: block;
+    }
+  }
+
+  &__mobile-svgicon {
+    fill: white;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  &__list {
+    display: flex;
+
+    @include respond(tab-port) {
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      right: 0;
+      top: 3rem;
+      z-index: 100;
+      background-color: var(--color-primary);
+      height: 100%;
+
+      width: 0;
+      opacity: 0;
+      visibility: hidden;
+
+      transition: all 0.3s;
+      transform-origin: right;
+
+      align-items: center;
+    }
+  }
+
+  &__link {
+    @include respond(tab-port) {
+      margin: 1rem 0;
+    }
+
+    &:link,
+    &:visited {
+      display: inline-block;
+      color: var(--color-typo-grey-light);
+      font-family: "Montserrat", Helvetica, sans-serif;
+      font-size: 0.9rem;
+      padding: 0.8rem 1.2rem;
+      position: relative;
+
+      @include respond(tab-port) {
+        color: white;
+      }
+    }
+    &:hover,
+    &:active {
+      color: var(--color-typo-grey-dark);
+
+      @include respond(tab-port) {
+        color: white;
+      }
+    }
+
+    // bottom line effect
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      transform: scaleX(0);
+      background-color: var(--color-primary);
+      transition: transform 0.2s;
+      transform-origin: center;
+      @include respond(tab-port) {
+        background-color: white;
+      }
+    }
+    // bottom line effect
+    &:hover::after {
+      transform: scaleX(0.3);
+    }
+  }
+
+  //   active effect : JS
+  &__link--active {
+    &:link,
+    &:visited {
+      color: var(--color-typo-grey-dark);
+      @include respond(tab-port) {
+        color: white;
+      }
+    }
+    &::after {
+      transform: scaleX(0.3);
+    }
+  }
+
+  &__mobile-checkbox:checked ~ &__list {
+    width: 20rem;
+    visibility: visible;
+    opacity: 1;
+  }
+}

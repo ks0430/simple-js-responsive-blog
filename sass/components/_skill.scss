@@ -1,0 +1,40 @@
+.b-skill {
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__title {
+    margin-bottom: 0.5rem;
+  }
+
+  &__bar {
+    height: 100%;
+    width: 100%;
+    font-size: 0.7rem;
+    border: 1px solid var(--color-line-grey);
+    background-color: var(--color-background-grey);
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 80%;
+      background-color: var(--color-primary);
+      animation: 1.5s slideFromLeft;
+    }
+  }
+}
+
+@keyframes slideFromLeft {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 80%;
+  }
+}

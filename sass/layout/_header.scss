@@ -1,0 +1,22 @@
+.b-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  height: 6rem;
+  transition: all 0.3s;
+
+  // Position children
+  display: flex;
+
+  // Modifier: scroll to 30px use this style, js
+  &--white {
+    height: 4.5rem;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(black, 0.15);
+  }
+
+  @include respond(tab-port) {
+    height: auto;
+  }
+}

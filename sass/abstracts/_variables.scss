@@ -1,0 +1,22 @@
+:root {
+  // Main color
+  --color-primary: #5f27cd;
+  --color-background-grey: #f5f5f5;
+
+  --color-typo-grey-dark: #212121;
+  --color-typo-grey-light: #8f959b;
+  --color-typo-grey-light-2: #a9b1b8;
+  --color-typo-grey: #48515d;
+
+  --color-line-grey: rgb(226, 226, 226);
+}
+
+// Computed color
+$color-typo-grey-light: rgba(#48515d, 0.8);
+$color-primary: #2eca7f;
+
+// content max width
+$max-width: 64rem;
+
+//  grid system
+$grid-gutter: 1rem;

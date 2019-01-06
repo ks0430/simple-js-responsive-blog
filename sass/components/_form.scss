@@ -1,0 +1,131 @@
+.b-form {
+  &__group {
+    display: flex;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__icon-wrap {
+    width: 2.8rem;
+    height: 2.5rem;
+    text-align: center;
+    background-color: var(--color-background-grey);
+    // @include flex-center;
+    padding-top: 0.7rem;
+    position: relative;
+    z-index: 35;
+    &--textarea {
+      height: auto;
+    }
+  }
+
+  &__icon {
+    width: 1.1rem;
+    height: 1.1rem;
+    fill: var(--color-typo-grey-light-2);
+    transition: all 0.3s;
+  }
+
+  &__label {
+    font-size: 0.9rem;
+    position: absolute;
+    z-index: 42;
+    color: var(--color-typo-grey-light);
+    font-weight: 300;
+    top: 0.8rem;
+    left: 3.2rem;
+    transition: all 0.3s;
+  }
+
+  &__label--focus {
+    font-size: 0.8rem;
+    top: -0.8rem;
+  }
+
+  &__input,
+  &__textarea {
+    padding-left: 0.8rem;
+    font-size: 0.9rem;
+    position: relative;
+    border: none;
+    width: 100%;
+    z-index: 41;
+    left: 0;
+    background-color: transparent;
+    line-height: 1.4;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__textarea {
+    padding-top: 0.6rem;
+    resize: vertical;
+  }
+
+  &__input:focus ~ &__input-border::after {
+    transform: scaleX(1);
+  }
+
+  &__textarea:focus ~ &__input-border::after {
+    transform: scaleX(1);
+  }
+
+  // &:focus-within &__icon {
+  //   fill: var(--color-primary);
+  // }
+
+  // css can't do input:empty Use JS
+  //   Todo:js
+
+  &__input-border {
+    box-sizing: content-box; // otherwise it will hide behind input box
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 42;
+    border-bottom: 1px solid var(--color-line-grey);
+
+    &::after {
+      content: "";
+      box-sizing: content-box;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: var(--color-primary);
+      transform-origin: center;
+      transform: scaleX(0);
+      transition: all 0.3s;
+    }
+  }
+
+  &__button {
+    border: none;
+    padding: 0.8rem 1rem;
+    height: 3rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: white;
+    border-radius: 3px;
+    background-color: var(--color-primary);
+    box-shadow: 0 2px 2px rgba(black, 0.3);
+    transition: all 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 4px 3px rgba(black, 0.3);
+      transform: translateY(-2px);
+    }
+
+    &:focus {
+      outline: none;
+      border-bottom: 3px solid darken($color-primary, 10%);
+    }
+  }
+}

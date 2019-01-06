@@ -1,0 +1,12 @@
+.b-footer {
+  position: fixed;
+  width: 100%;
+  bottom: 1rem;
+
+  &__copyright {
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--color-typo-grey-light);
+  }
+}

@@ -3,4 +3,43 @@
 @import "base/typography";
 @import "abstract/variables";
 
+// Variables import first
+@import "abstracts/variables";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+
+// Bootstrap part import custom file
+// @import "./base/custom";
+
+@import "base/utilities";
+@import "base/animation";
+@import "base/base";
+@import "base/typography";
+
+@import "components/navbar";
+@import "components/img";
+@import "components/list";
+@import "components/link";
+@import "components/input";
+@import "components/form";
+@import "components/summary-title"; // home page Name & Job title
+@import "components/page-title"; // subpage title
+@import "components/timeline"; // resume timeline
+@import "components/skill";
+@import "components/service";
+@import "components/logo";
 @import "components/card";
+
+@import "layout/flexgrid";
+@import "layout/header";
+@import "layout/content";
+@import "layout/footer";
+
+@import "pages/home";
+@import "pages/resume";
+@import "pages/services";
+@import "pages/blog";
+@import "pages/contact";
+
+// Testing files
+@import "components/test/textarea-fit";
