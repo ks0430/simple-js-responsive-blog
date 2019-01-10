@@ -87,3 +87,40 @@
   display: flex;
   width: 100%;
 }
+
+.perspective {
+  display: flex;
+  justify-content: center;
+  perspective: 200px;
+
+  &__square1 {
+    height: 200px;
+    width: 200px;
+    color: white;
+    background-color: black;
+    // animation: square 5s;
+    // animation-fill-mode: both;
+    display: inline-block;
+    margin-top: 10rem;
+    transition: all 5s;
+  }
+}
+
+@keyframes perspective {
+  0% {
+    perspective: 100px;
+  }
+
+  100% {
+    perspective: none;
+  }
+}
+
+@keyframes square {
+  0% {
+    transform: rotatey(-180deg);
+  }
+  100% {
+    // transform: translate3d(1.5, 1.5, 1.5);
+  }
+}

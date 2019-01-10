@@ -1,42 +1,46 @@
+.b-page {
+  position: relative;
+}
+
 .b-main {
   // navbar selection function
   // Set current # visible
   // otherwise push it from current document flow
   position: relative;
+  width: 100%;
+  height: 100vh;
+  // Perspective effect: for page animation
 
   & > section {
-    visibility: hidden;
-    opacity: 0;
-    height: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    margin: 0 auto;
-    transition: all 0.4s;
+    // Default value
     overflow: hidden; // If not set to overflow hidden, then content will overflow and take space.
+
+    // Have to use absolute, when two div both animated on screen they are in row direction, use relative will cause they are in column direction
+    position: absolute;
+    // Give child element a full screen width
+    width: 100%;
+
+    // only can be point to the top of selection element
+    padding-top: 6.5rem;
+    perspective: 1800px;
   }
 
   & > section:target {
-    // position: relative; // Cannot set to relative, otherwise absolute will find it's sibling as target
-    visibility: visible;
-    opacity: 1;
-    height: auto;
+    z-index: 8;
   }
 }
 
-.b-page {
-  position: relative;
-}
-
 .b-content {
-  max-width: $max-width;
-  margin: 0 auto;
-  margin-top: 6.5rem;
-  margin-bottom: 4rem;
+  display: none;
 
+  margin: 0 auto;
   border-radius: 14px;
   background-color: white;
   overflow: hidden;
+
+  width: 100%;
+  max-width: $max-width;
+  margin-bottom: 4rem;
 
   box-shadow: 0 0.8rem 1.5rem rgba(black, 0.15);
   position: relative;
@@ -47,6 +51,24 @@
     margin-top: 5rem;
     margin-bottom: 3rem;
   }
+}
+
+.b-current-content {
+  display: block;
+}
+
+.u-anim-out {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  animation: zoomOutLeftBottom 1s;
+}
+
+.u-anim-in {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  animation: zoomInRightBottom 1s;
 }
 
 .b-details-wrap {

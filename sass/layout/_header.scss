@@ -1,6 +1,7 @@
 .b-header {
   position: fixed;
-  width: 100%;
+  // Fixed's parent/ref is not body, so set 100wh again to against scrollbar width
+  width: 100vw;
   top: 0;
   z-index: 10;
   height: 6rem;

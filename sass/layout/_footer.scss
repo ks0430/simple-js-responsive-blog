@@ -1,6 +1,7 @@
 .b-footer {
   position: fixed;
-  width: 100%;
+  // Same as header, ignore scrollbar width
+  width: 100vw;
   bottom: 1rem;
 
   &__copyright {

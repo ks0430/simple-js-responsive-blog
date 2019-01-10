@@ -1,12 +1,13 @@
-@import "base/base";
-@import "base/flexbox";
-@import "base/typography";
-@import "abstract/variables";
-
 // Variables import first
 @import "abstracts/variables";
 @import "abstracts/functions";
 @import "abstracts/mixins";
+
+// Base
+@import "base/base";
+@import "base/flexbox";
+@import "base/typography";
+@import "abstract/variables";
 
 // Bootstrap part import custom file
 // @import "./base/custom";
@@ -16,6 +17,8 @@
 @import "base/base";
 @import "base/typography";
 
+// Components
+@import "components/background-img";
 @import "components/navbar";
 @import "components/img";
 @import "components/list";

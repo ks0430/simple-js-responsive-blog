@@ -154,14 +154,14 @@ html {
 body {
   box-sizing: border-box;
   position: relative;
-  // Background overlay
   background-color: rgb(245, 245, 245);
-  background-image: url(../img/portfolio/main_bg.png);
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
   // Fonts
   font-family: "Montserrat", Helvetica, sans-serif;
+  // against scrollbar width from adding scrollbar to left side
+  // Only affect to relative or static position
+  width: 100vw;
+  // For page selection animation, will overflow x asixs
+  // overflow-x: hidden;
 }
 
 a {
