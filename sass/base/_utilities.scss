@@ -45,7 +45,7 @@
 // media query margin utilities
 
 .u-mb-md-3 {
-  @include respond(tab-port2) {
+  @include respond(tab-port) {
     margin-bottom: $spacing;
   }
 }
@@ -92,6 +92,9 @@
 
 // Padding responsive
 .u-p-2--md {
+  @include respond(tab-port) {
+    padding: $spacing * 0.5;
+  }
 }
 
 // padding x axis

@@ -39,7 +39,7 @@
 .u-mb-6 {
   margin-bottom: 6rem; }
 
-@media (max-width: 51.375em) {
+@media (max-width: 66.875em) {
   .u-mb-md-3 {
     margin-bottom: 2rem; } }
 
@@ -70,6 +70,10 @@
 
 .u-p-6 {
   padding: 6rem; }
+
+@media (max-width: 66.875em) {
+  .u-p-2--md {
+    padding: 1rem; } }
 
 .u-px-1 {
   padding-left: 0.5rem;
@@ -377,8 +381,7 @@ a:hover {
       width: 100%;
       max-width: 100%;
       height: 4rem;
-      background-color: var(--color-primary);
-      padding: 0 1rem; } }
+      background-color: var(--color-primary); } }
   .b-navbar__brand:link, .b-navbar__brand:visited {
     display: inline-block;
     font-family: "Montserrat", Helvetica, sans-serif;
@@ -455,6 +458,9 @@ a:hover {
         background-color: white; } }
   .b-navbar__link:hover::after {
     transform: scaleX(0.3); }
+    @media (max-width: 66.875em) {
+      .b-navbar__link:hover::after {
+        transform: scaleX(0.1); } }
   .b-navbar__link--active:link, .b-navbar__link--active:visited {
     color: var(--color-typo-grey-dark); }
     @media (max-width: 66.875em) {

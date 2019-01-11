@@ -15,7 +15,6 @@
     max-width: 100%;
     height: 4rem;
     background-color: var(--color-primary);
-    padding: 0 1rem;
   }
 
   &__brand {
@@ -132,6 +131,10 @@
     // bottom line effect
     &:hover::after {
       transform: scaleX(0.3);
+
+      @include respond(tab-port) {
+        transform: scaleX(0.1);
+      }
     }
   }
 
