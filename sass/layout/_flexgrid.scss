@@ -1,19 +1,12 @@
+// For main layout
+// Reference: bootstrap 4
+// Support custom responsive break point
+// Support gutter custom setting
+
 .b-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
-  &--ycenter {
-    align-items: center;
-  }
-
-  &--ytop {
-    align-items: flex-start;
-  }
-
-  &--xcenter {
-    justify-content: center;
-  }
 
   &[row] {
     flex-direction: row;
@@ -112,5 +105,48 @@
     @include respond(phone) {
       flex: 0 1 calc((100% - 5 *#{$grid-gutter}) / 6);
     }
+  }
+}
+
+// Flexbox Utilities
+// Use for each item in col
+// Ref: Bootstrap 4
+
+.d-flex {
+  display: flex;
+
+  // Same level as d-flex
+  &.column {
+    flex-direction: column;
+  }
+
+  &.column-md {
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+  }
+
+  &.row {
+    flex-direction: row;
+  }
+
+  &.justify-content-start {
+    justify-content: flex-start;
+  }
+
+  &.justify-content-center {
+    justify-content: center;
+  }
+
+  &.justify-content-end {
+    justify-content: end;
+  }
+
+  &.align-items-center {
+    align-items: center;
+  }
+
+  &.justify-content-space-between {
+    justify-content: space-between;
   }
 }
