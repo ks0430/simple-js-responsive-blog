@@ -83,7 +83,7 @@ const navbarLinkHandler = () => {
 const selectionChange = () => {
   let navbarArr = $(".b-navbar__link");
   navbarArr.click(function(event) {
-    console.log("click", Page);
+    // console.log("click", Page);
     if (Page.moveIn || Page.moveOut) {
       console.error("Animation not finished");
       return;
@@ -111,12 +111,12 @@ const initial = () => {
   Page.currentPage = currentSection;
 
   let pages = document.querySelectorAll("section > .b-content");
-  console.log(pages);
+  // console.log(pages);
   pages.forEach(item => {
-    console.log(item);
+    // console.log(item);
     item.addEventListener("animationend", function() {
       if (item.classList.contains("u-anim-out")) {
-        console.log("preSection finished", item);
+        // console.log("preSection finished", item);
         item.classList.remove("u-anim-out");
         item.classList.remove("b-current-content");
         // remove this preSection
@@ -126,7 +126,7 @@ const initial = () => {
       if (item.classList.contains("u-anim-in")) {
         item.classList.remove("u-anim-in");
         Page.moveIn = false;
-        console.log("Move In Finish", item.parentNode);
+        // console.log("Move In Finish", item.parentNode);
       }
     });
   });
@@ -136,7 +136,7 @@ const pageMoveOut = page => {
   page.classList.add("u-anim-out");
   // Animation Start
   Page.moveOut = true;
-  console.log("move out", eventTrash);
+  // console.log("move out", eventTrash);
 };
 
 const pageMoveIn = page => {
@@ -145,7 +145,7 @@ const pageMoveIn = page => {
   page.classList.add("u-anim-in");
   // Push current section to trash
   Page.moveIn = true;
-  console.log("Move in", Page);
+  // console.log("Move in", Page);
   Page.currentPage = page;
 };
 
