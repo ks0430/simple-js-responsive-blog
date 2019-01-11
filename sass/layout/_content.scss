@@ -13,7 +13,6 @@
 
   & > section {
     // Default value
-    overflow: hidden; // If not set to overflow hidden, then content will overflow and take space.
 
     // Have to use absolute, when two div both animated on screen they are in row direction, use relative will cause they are in column direction
     position: absolute;
@@ -23,6 +22,10 @@
     // only can be point to the top of selection element
     padding-top: 6.5rem;
     perspective: 1800px;
+
+    @include respond(tab-port) {
+      padding: 0 1rem;
+    }
   }
 
   & > section:target {
@@ -47,7 +50,8 @@
   z-index: 5;
 
   @include respond(tab-port) {
-    margin: 0 1rem;
+    // not effect in position absolute will overflow
+    // margin: 0 1rem;
     margin-top: 5rem;
     margin-bottom: 3rem;
   }

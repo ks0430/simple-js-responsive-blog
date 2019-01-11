@@ -159,9 +159,9 @@ body {
   font-family: "Montserrat", Helvetica, sans-serif;
   // against scrollbar width from adding scrollbar to left side
   // Only affect to relative or static position
-  width: 100vw;
+  // width: 100%;
   // For page selection animation, will overflow x asixs
-  // overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 a {
