@@ -2,7 +2,10 @@
 
 const preloadSVG = () => {
   const ajax = new XMLHttpRequest();
-  ajax.open("GET", "img/portfolio/icons/sprite.svg");
+  const pathName = window.location.pathname;
+  const svgPath = pathName + "img/portfolio/icons/sprite.svg";
+  console.log(svgPath);
+  ajax.open("GET", svgPath);
   ajax.send();
   ajax.onload = function(event) {
     let div = document.createElement("div");
