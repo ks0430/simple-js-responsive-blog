@@ -1,3 +1,5 @@
+import preloadSVG from "/js/preloadSVG.js";
+
 let Page = {
   currentPage: null,
   moveOut: false,
@@ -25,6 +27,9 @@ $(document).ready(function() {
 
   // Initial stats
   initial();
+
+  // Preload svg
+  preloadSVG();
 });
 
 // header stick handler - bind to document object
