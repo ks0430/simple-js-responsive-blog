@@ -210,7 +210,7 @@ const pageMoveIn = page => {
 
 const preloadSVG = (_svgPath) => {
   const ajax = new XMLHttpRequest();
-  const path = "/img/portfolio/icons/sprite.svg";
+  const path = _svgPath + "/img/portfolio/icons/sprite.svg";
   console.log(path);
   ajax.open("GET", path);
   ajax.send();
