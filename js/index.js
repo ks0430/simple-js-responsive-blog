@@ -1,19 +1,22 @@
 // Attension! For github page setting
 // Because of subpage hosting, svg img path will change depend on repo's name.
-let isHostOnSubPage = true;
+let isHostOnSubPage = false;
 let pathArr = window.location.pathname.split('/');
 console.log(pathArr);
+// If host on subpage, determine which part is hoem page.
+// git hub is the second part
+// localhost is the first part
+let homePagePath = isHostOnSubPage? pathArr[1]:pathArr[0];
+console.log("homePagePath",homePagePath);
+let currentPath = window.location.pathname.replace('/','') ;
+console.log("currentPath",currentPath);
 
-let homePage = isHostOnSubPage? pathArr[1]:pathArr[0];
-
-console.log("/"+homePage);
-
-let isHomepage = "/" + homePage === window.location.pathname ? true : false;
-console.log(isHomepage);
+let isHomepage =  homePagePath === currentPath? true : false;
+console.log("isHomePage",isHomepage);
 
 
-let svgPath = isHostOnSubPage? pathArr[1]:"";
-console.log("svgPath",svgPath);
+let svgPath = isHostOnSubPage? homePagePath:"";
+console.log("svgPath:",svgPath);
 
 
 
@@ -198,6 +201,7 @@ const pageMoveIn = page => {
 const preloadSVG = (_svgPath) => {
   const ajax = new XMLHttpRequest();
   const path = _svgPath + "/img/portfolio/icons/sprite.svg";
+  console.log(path);
   ajax.open("GET", path);
   ajax.send();
   ajax.onload = function (event) {
