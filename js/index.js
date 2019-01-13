@@ -3,8 +3,18 @@
 let isHostOnSubPage = true;
 let pathArr = window.location.pathname.split('/');
 console.log(pathArr);
+
+let homePage = isHostOnSubPage? pathArr[1]:pathArr[0];
+
+console.log("/"+homePage);
+
+let isHomepage = "/" + homePage === window.location.pathname ? true : false;
+console.log(isHomepage);
+
+
 let svgPath = isHostOnSubPage? pathArr[1]:"";
 console.log("svgPath",svgPath);
+
 
 
 
@@ -41,9 +51,7 @@ $(document).ready(function () {
   preloadSVG(svgPath);
 
   // For home page
-  const path = window.location.pathname;
-  console.log("window", path);
-  if (path === "/") {
+  if (isHomepage) {
     window.location.replace("./#home");
     // Initial stats
     initial();
@@ -189,10 +197,8 @@ const pageMoveIn = page => {
 
 const preloadSVG = (_svgPath) => {
   const ajax = new XMLHttpRequest();
-  const svgPath = _svgPath + "/img/portfolio/icons/sprite.svg";
-  console.log("193",svgPath);
-  console.log(svgPath);
-  ajax.open("GET", svgPath);
+  const path = _svgPath + "/img/portfolio/icons/sprite.svg";
+  ajax.open("GET", path);
   ajax.send();
   ajax.onload = function (event) {
     let div = document.createElement("div");
