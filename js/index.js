@@ -1,5 +1,4 @@
 // Utilities
-
 String.prototype.replaceAll = function(search, replacement) {
   var target = this;
   return target.replace(new RegExp(search, 'g'), replacement);
@@ -16,16 +15,11 @@ console.log(pathArr);
 // git hub is the second part
 // localhost is the first part
 let homePagePath = isHostOnSubPage? pathArr[1]:pathArr[0];
-console.log("homePagePath",homePagePath);
 let currentPath = window.location.pathname.replaceAll('/','') ;
-console.log("currentPath",currentPath);
-
+// Check if it is homepage
 let isHomepage =  homePagePath === currentPath? true : false;
 console.log("isHomePage",isHomepage);
 
-
-let svgPath = isHostOnSubPage? homePagePath:"";
-console.log("svgPath:",svgPath);
 
 
 
@@ -61,7 +55,7 @@ $(document).ready(function () {
 
 
   // Preload svg
-  preloadSVG(svgPath);
+  preloadSVG();
 
   // For home page
   if (isHomepage) {
@@ -208,9 +202,8 @@ const pageMoveIn = page => {
   Page.currentPage = page;
 };
 
-const preloadSVG = (_svgPath) => {
+const preloadSVG = () => {
   const ajax = new XMLHttpRequest();
-  // have to add "/" other
   const path = "img/portfolio/icons/sprite.svg";
   console.log(path);
   ajax.open("GET", path);
