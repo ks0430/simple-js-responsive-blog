@@ -1,6 +1,6 @@
 // Attension! For github page setting
 // Because of subpage hosting, svg img path will change depend on repo's name.
-let isHostOnSubPage = false;
+let isHostOnSubPage = true;
 let pathArr = window.location.pathname.split('/');
 console.log(pathArr);
 let svgPath = isHostOnSubPage? pathArr[1]:"";
