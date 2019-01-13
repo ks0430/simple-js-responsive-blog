@@ -159,4 +159,10 @@
       line-height: 1.5;
     }
   }
+
+  &__title-link {
+    &:link,&:visited{
+      color: currentColor;
+    }
+  }
 }

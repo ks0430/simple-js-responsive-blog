@@ -2094,6 +2094,8 @@ a:hover {
       .b-card__title {
         font-size: 0.8rem;
         line-height: 1.5; } }
+  .b-card__title-link:link, .b-card__title-link:visited {
+    color: currentColor; }
 
 .b-container {
   display: flex;
@@ -2338,9 +2340,6 @@ a:hover {
   display: inline-block;
   font-size: 0.8rem;
   font-weight: 600; }
-
-.b-contact-form {
-  overflow: hidden; }
 
 .test-2 {
   display: flex;
