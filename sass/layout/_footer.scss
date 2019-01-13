@@ -3,6 +3,7 @@
   // Same as header, ignore scrollbar width
   width: 100vw;
   bottom: 1rem;
+  z-index: -1;
 
   &__copyright {
     text-align: center;

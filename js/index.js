@@ -8,7 +8,7 @@ String.prototype.replaceAll = function(search, replacement) {
 
 // Attension! For github page setting
 // Because of subpage hosting, svg img path will change depend on repo's name.
-let isHostOnSubPage = true;
+let isHostOnSubPage = false;
 let pathArr = window.location.pathname.split('/');
 console.log(pathArr);
 // If host on subpage, determine which part is hoem page.

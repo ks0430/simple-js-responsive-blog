@@ -21,6 +21,7 @@
 @import "components/input";
 @import "components/form";
 
+
 // Special Components
 // home page Name & Job title
 @import "components/summary-title";
@@ -36,6 +37,10 @@
 @import "components/logo";
 // Blog card
 @import "components/card";
+// Blog article
+@import "components/article";
+// comments
+@import "components/comment";
 
 // Layout & laout utilities
 // Main layout system: base on flexbox
@@ -54,6 +59,8 @@
 @import "pages/services";
 @import "pages/blog";
 @import "pages/contact";
+// Blog main page
+@import "pages/blog-content";
 
 // Testing files
 @import "components/test/textarea-fit";

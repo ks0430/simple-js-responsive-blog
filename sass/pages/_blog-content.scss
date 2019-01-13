@@ -1,0 +1,36 @@
+.b-blog-content {
+    &__img-wrap {
+        max-height: 30rem;
+        height: 46.875vw;
+
+        @include respond(tablet-lg) {
+            margin: -1.5rem;
+        }
+        @include respond(phone) {
+            margin: -1rem;
+        }
+    }
+
+    &__body-wrap {
+        margin-top: -3rem;
+        background-color: white;
+        position: relative;
+        z-index: 20;
+    }
+
+    &__article {
+
+    }
+
+    &__comments {
+
+    }
+
+    &__comments-form {
+        width: 75%;
+
+        @include respond(phone) {
+            width: 100%;
+        }
+    }
+}

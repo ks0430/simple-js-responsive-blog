@@ -1,0 +1,84 @@
+.b-comment {
+
+    &__img-wrap {
+        height: 3.5rem;
+        width: 3.5rem;
+        overflow: hidden;
+        border-radius: 100%;
+
+        @include respond(phone) {
+            height: 2.5rem;
+            width: 2.5rem;
+        }
+    }
+
+    &__info-list {
+        font-size: .9rem;
+        margin-bottom: .8rem;
+
+        @include respond(phone) {
+            font-size: .8rem;
+        }
+    }
+
+
+    &__name {
+        font-weight: 600;
+        color: var(--color-primary);
+        border-right: 1px solid var(--color-line-grey);
+        padding-right: .4rem;
+
+        & > a {
+            &:link,
+            &:visited {
+                transition: all .3s;
+            }
+
+            &:hover,
+            &:active {
+                color:var(--color-primary-opposite);
+            }
+        }
+
+
+    }
+
+    &__time {
+        color: var(--color-typo-grey-light);
+        padding-left: .4rem;
+        font-size: 0.7rem;
+    }
+
+    &__body {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        margin-bottom: .8rem;
+    }
+
+
+
+    &__reply {
+        border: none;
+        background-color: transparent;
+        color: var(--color-typo-grey-light-2);
+        transition: all .3s;
+        &:hover {
+            color: var(--color-primary-opposite);
+            outline: none;
+            cursor: pointer;
+        }
+
+        & span {
+            font-size: .8rem;
+        }
+    }
+
+    &__icon {
+        width: 1rem;
+        height: 1rem;
+        fill: currentColor;
+        margin-right: .2rem;
+
+  
+    }
+}

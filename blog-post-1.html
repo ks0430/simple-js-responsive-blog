@@ -52,52 +52,56 @@
             </nav>
         </header>
         <main class="b-main">
-            <section class="b-blog" id="blog">
+            <section class="b-blog-content" id="blog">
                 <div class="b-content b-current-content">
                     <div class="b-details-wrap">
                         <!-- Blog content start -->
-                        <figure class="b-blog__img-wrap">
+                        <figure class="b-blog-content__img-wrap">
                             <img src="./img/portfolio/CG/chiaki-02.png" class="b-img--fit" alt="chiaki_01">
                         </figure>
-                        <div class="b-blog__body-wrap u-m-4">
-                            <div class="b-blog__article">
+                        <div class="b-blog-content__body-wrap u-m-3 u-p-3 u-m-0--sm u-p-2--sm u-p-0--xs u-m-0--sm ">
+                            <div class="b-blog-content__article u-mb-4">
                                 <div class="b-article">
-                                    <h2 class="b-title--lg u-mb-3">Bootstrap is the Most Popular HTML, CSS, and JS Framework</h2>
-                                    <div class="b-article-info-wrap u-mb-3">
-                                        <span class="b-article-time">23 November, 2019</span>
-                                        <span class="b-article-author">Evelyn Chu</span>
-                                        <span class="b-article__category">Technolgy</span>
-                                    </div>
-                                    <p class="b-aticle-body u-mb-2">Lorem ipsum dolor sit, amet consectetur adipisicing
-                                        elit.
-                                        Ratione harum praesentium id corporis, culpa sit inventore eveniet quis nihil
-                                        perferendis doloremque obcaecati optio aliquid enim nisi laborum illum est at?</p>
-                                    <p class="b-aticle-body u-mb-2">Lorem ipsum dolor sit, amet consectetur adipisicing
-                                        elit.Ratione harum praesentium id corporis, culpa sit inventore eveniet quis
-                                        nihilperferendis doloremque obcaecati optio aliquid enim nisi laborum illum est
-                                        at?Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eum
-                                        asperioresrepudiandaeipsa veniam nesciunt dolorum architecto. Voluptas consequatur exercitationem
-                                        dolorestempora ratione placeat, ipsa quam consectetur voluptatibus quis
-                                        neque!Loremipsumdolor sit, amet consectetur adipisicing elit.
-                                        Ratione harum praesentium id corporis, culpa sit inventore eveniet quis nihil
-                                        perferendis doloremque obcaecati optio aliquid enim nisi laborum illum est
-                                        at?Loremipsum dolor sit amet consectetur adipisicing elit. Saepe eum asperiores
-                                        repudiandaeipsa veniam nesciunt dolorum architecto. Voluptas consequatur exercitationem
-                                        dolorestempora ratione placeat, ipsa quam consectetur voluptatibus quis neque!</p>
-                                    <p class="b-aticle-body b-article-body--quote">Lorem ipsum dolor sit, amet
+                                    <h2 class="b-article__title u-mb-3">Make your first AJAX request</h2>
+                                    <ul class="b-article__info-list u-mb-3 d-flex">
+                                        <li class="b-article__info-item u-pr-1 d-flex align-items-center">
+                                            <svg class="b-article__icon u-mr-1 u-mr-0--xs u-mb-1--xs">
+                                                <use xlink:href="#icon-clock"></use>
+                                            </svg>
+                                            23 Nov 2019
+                                        </li>
+                                        <li class="b-article__info-item u-px-1 d-flex align-items-center">
+                                            <svg class="b-article__icon u-mr-1">
+                                                    <use xlink:href="#icon-user"></use>
+                                            </svg>
+                                            Evelyn Chu
+                                        </li>
+                                        <li class="b-article__info-item u-pl-1 d-flex align-items-center">
+                                            <svg class="b-article__icon u-mr-1">
+                                                    <use xlink:href="#icon-folder"></use>
+                                            </svg>
+                                            Tech
+                                        </li>
+                                    </ul>
+                                    <p class="b-article__body u-mb-2">Don't let all the acronyms you just learned freak you out! We'll start with a simple AJAX example that puts into practice many of the JavaScript examples you've learned in this course so far.</p>
+                                    <p class="b-article__body u-mb-2">You have two options for following along, depending on how comfortable you feel setting up a server on your computer.</p>
+                                    <p class="b-article__body b-article__body--quote u-mb-2">Lorem ipsum dolor sit, amet
                                         consecteturadipisicing elit.Ratione harum praesentium id corporis, culpa sit inventore eveniet quis nihil
                                         perferendis doloremque obcaecati optio aliquid enim nisi laborum illum est
                                         at?Loremipsum dolor sit amet consectetur adipisicing elit. Saepe eum asperiores
                                         repudiandaeipsa veniam nesciunt dolorum architecto. Voluptas consequatur exercitationem
                                         dolorestempora ratione placeat, ipsa quam consectetur voluptatibus quis neque!Lorem
-                                        ipsumdolor sit, amet consectetur adipisicing elit.</p>
-                                    <div class="b-article__bottom d-flex">
-                                        <ul class="b-article__tag-list d-flex u-mr-auto">
-                                            <li class="b-article__tag">HTML5</li>
-                                            <li class="b-article__tag">CSS3</li>
-                                            <li class="b-article__tag">jQuery</li>
-                                            <li class="b-article__tag">Ajax</li>
-                                            <li class="b-article__tag">PHP5</li>
+                                        ipsumdolor sit, amet consectetur adipisicing elit.
+                                        <span class="b-article__body--quote-author">- Evelyn Chu</span>
+                                    </p>
+                                    <p class="b-article__body u-mb-3">AJAX will not work when you're opening local files on your computer! For security reasons, it only works when the code is running on a web server. This is to make sure you're not accessing data from websites you're not supposed to.</p>
+                                    <div class="b-article__bottom d-flex u-mb-3">
+                                        <ul class="b-article__tag-list d-flex align-items-center u-mr-auto">
+                                            <li class="b-article__tag"><a href="">HTML5</a></li>
+                                            <li class="b-article__tag"><a href="">Php5</a></li>
+                                            <li class="b-article__tag"><a href="">Jquery</a></li>
+                                            <li class="b-article__tag"><a href="">Css3</a></li>
+                                            <li class="b-article__tag"><a href="">Ajax5</a></li>
                                         </ul>
                                         <ul class="b-article__social-link-list d-flex">
                                             <li class="b-article__social-link">
@@ -125,32 +129,94 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="b-blog__commets u-mb-3">
-                                <h2 class="b-title--md u-mb-2">Comments (3)</h2>
+                            <div class="b-blog-content__commets u-mb-4">
+                                <h2 class="b-title--md u-mb-3">Comments (3)</h2>
                                 <ul class="b-comment-list">
                                     <li class="b-comment d-flex">
-                                        <div class="b-commeng__left u-mr-auto">
-                                        <figure class="b-comment__img-wrap u-box-2 u-rounded">
+                                        <div class="b-comment__left u-pr-1">
+                                        <figure class="b-comment__img-wrap">
                                             <img src="./img/portfolio/chiaki-01-sm.png" alt="chiaki 01" class="b-comment__img b-img--fit">
                                         </figure>
                                         </div>
                                         <div class="b-comment__right">
-                                            <p class="b-comment__info">
-                                                    <span class="b-comment__name">Evelyn Chu</span>
-                                                    <span class="b-comment__name">1 hour ago</span>
-                                            </p>
-                                            <p class="b-comment__body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, ratione dolor. Delectus pariatur, dolorem autem culpa iusto ut repellat nobis voluptatum id quibusdam. Nisi culpa inventore, labore et sint recusandae.</p>
-                                            <button class="b-comment__reply">
-                                                <svg class="u-box-1">
-                                                    <use xlink:href="#icon-facebook"></use>
+                                            <ul class="b-comment__info-list d-flex align-items-center">
+                                                <li class="b-comment__name"><a href="">Chiaki Morisawa</a></li>
+                                                <li class="b-comment__time">1 hour ago</li>
+                                            </ul>
+                                            <p class="b-comment__body">高峯！部活だぞ！</p>
+                                            <button class="b-comment__reply d-flex align-items-center u-mb-3">
+                                                <svg class="b-comment__icon">
+                                                    <use xlink:href="#icon-reply"></use>
                                                 </svg>
                                                 <span>Reply</span>
                                             </button>
                                         </div>
                                     </li>
+                                    <li class="b-comment d-flex">
+                                        <div class="b-comment__left u-pr-1">
+                                        <figure class="b-comment__img-wrap">
+                                            <img src="./img/portfolio/CG/midori-01.png" alt="chiaki 01" class="b-comment__img b-img--fit">
+                                        </figure>
+                                        </div>
+                                        <div class="b-comment__right">
+                                            <ul class="b-comment__info-list d-flex align-items-center">
+                                                <li class="b-comment__name"><a href="">Midori Takamine</a></li>
+                                                <li class="b-comment__time">1 hour ago</li>
+                                            </ul>
+                                            <p class="b-comment__body">イチャイチャしお先輩〜イチャイチャしお先輩〜イチャイチャしお先輩〜イチャイチャしお先輩〜イチャイチャしお先輩〜</p>
+                                            <button class="b-comment__reply d-flex align-items-center u-mb-3">
+                                                <svg class="b-comment__icon">
+                                                    <use xlink:href="#icon-reply"></use>
+                                                </svg>
+                                                <span>Reply</span>
+                                            </button>
+                                            <ul class="b-comment-list  u-mb-3">
+                                                <li class="b-comment d-flex u-mb-3">
+                                                    <div class="b-comment__left u-pr-1">
+                                                    <figure class="b-comment__img-wrap">
+                                                        <img src="./img/portfolio/chiaki-01-sm.png" alt="chiaki 01" class="b-comment__img b-img--fit">
+                                                    </figure>
+                                                    </div>
+                                                    <div class="b-comment__right">
+                                                        <ul class="b-comment__info-list d-flex align-items-center">
+                                                            <li class="b-comment__name"><a href="">Chiaki Morisawa</a></li>
+                                                            <li class="b-comment__time">1 hour ago</li>
+                                                        </ul>
+                                                        <p class="b-comment__body">それわだめだぞ！それわだめだぞ！それわだめだぞ！それわだめだぞ！それわだめだぞ！それわだめだぞ！それわだめだぞ！それわだめだぞ！</p>
+                                                        <button class="b-comment__reply d-flex align-items-center">
+                                                            <svg class="b-comment__icon">
+                                                                <use xlink:href="#icon-reply"></use>
+                                                            </svg>
+                                                            <span>Reply</span>
+                                                        </button>
+                                                    </div>
+                                                </li>
+                                                <li class="b-comment d-flex u-mb-3">
+                                                    <div class="b-comment__left u-pr-1">
+                                                    <figure class="b-comment__img-wrap">
+                                                        <img src="./img/portfolio/CG/midori-01.png" alt="chiaki 01" class="b-comment__img b-img--fit">
+                                                    </figure>
+                                                    </div>
+                                                    <div class="b-comment__right">
+                                                        <ul class="b-comment__info-list d-flex align-items-center">
+                                                            <li class="b-comment__name"><a href="">Midori Takamine</a></li>
+                                                            <li class="b-comment__time">1 hour ago</li>
+                                                        </ul>
+                                                        <p class="b-comment__body">....</p>
+                                                        <button class="b-comment__reply d-flex align-items-center">
+                                                            <svg class="b-comment__icon">
+                                                                <use xlink:href="#icon-reply"></use>
+                                                            </svg>
+                                                            <span>Reply</span>
+                                                        </button>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
-                            <div class="b-blog__comments-form u-mr-6">
+                            <div class="b-blog-content__comments-form">
                                 <h2 class="b-title--md u-mb-3">Leave a Comment</h2>
                                 <div class="b-form">
                                     <div class="b-form__group">
