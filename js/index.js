@@ -1,3 +1,13 @@
+// Attension! For github page setting
+// Because of subpage hosting, svg img path will change depend on repo's name.
+let isHostOnSubPage = true;
+let pathArr = window.location.pathname.split('/');
+let svgPath = pathArr[0];
+console.log(svgPath);
+
+
+
+
 let Page = {
   currentPage: null,
   moveOut: false,
@@ -27,7 +37,7 @@ $(document).ready(function () {
 
 
   // Preload svg
-  preloadSVG();
+  preloadSVG(svgPath);
 
   // For home page
   const path = window.location.pathname;
@@ -176,10 +186,9 @@ const pageMoveIn = page => {
   Page.currentPage = page;
 };
 
-const preloadSVG = () => {
+const preloadSVG = (_svgPath) => {
   const ajax = new XMLHttpRequest();
-  const origin = window.location.origin;
-  const svgPath = origin + "/img/portfolio/icons/sprite.svg";
+  const svgPath = _svgPath + "/img/portfolio/icons/sprite.svg";
   console.log(svgPath);
   ajax.open("GET", svgPath);
   ajax.send();
