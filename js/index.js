@@ -1,3 +1,12 @@
+// Utilities
+
+String.prototype.replaceAll = function(search, replacement) {
+  var target = this;
+  return target.replace(new RegExp(search, 'g'), replacement);
+};
+
+
+
 // Attension! For github page setting
 // Because of subpage hosting, svg img path will change depend on repo's name.
 let isHostOnSubPage = true;
@@ -8,7 +17,7 @@ console.log(pathArr);
 // localhost is the first part
 let homePagePath = isHostOnSubPage? pathArr[1]:pathArr[0];
 console.log("homePagePath",homePagePath);
-let currentPath = window.location.pathname.replace('/','') ;
+let currentPath = window.location.pathname.replaceAll('/','') ;
 console.log("currentPath",currentPath);
 
 let isHomepage =  homePagePath === currentPath? true : false;
@@ -17,6 +26,7 @@ console.log("isHomePage",isHomepage);
 
 let svgPath = isHostOnSubPage? homePagePath:"";
 console.log("svgPath:",svgPath);
+
 
 
 
