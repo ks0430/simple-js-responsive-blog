@@ -27,7 +27,9 @@
     }
   }
 
-  @include respond(tab-port2) {
+  @include respond(tablet-sm) {
     margin-top: 2rem;
   }
 }
+
+

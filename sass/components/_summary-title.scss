@@ -10,7 +10,7 @@
     font-weight: 700;
     margin: 1.3rem 0;
 
-    @include respond(tab-port2) {
+    @include respond(tablet-sm) {
       font-size: 2.5rem;
     }
   }
@@ -20,7 +20,7 @@
     font-weight: 500;
     margin-bottom: 1.3rem;
 
-    @include respond(tab-port2) {
+    @include respond(tablet-sm) {
       font-size: 1.2rem;
     }
   }

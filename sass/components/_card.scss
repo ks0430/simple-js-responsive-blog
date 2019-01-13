@@ -49,14 +49,14 @@
     font-size: 1.3rem;
     font-weight: 500;
     margin-bottom: 0.2rem;
-    @include respond(tab-port2) {
+    @include respond(tablet-sm) {
       font-size: 1.2rem;
     }
   }
   &__month {
     font-size: 0.7rem;
     font-weight: 500;
-    @include respond(tab-port2) {
+    @include respond(tablet-sm) {
       font-size: 0.6rem;
     }
   }
@@ -82,7 +82,7 @@
       object-fit: cover;
     }
 
-    @include respond(tab-port2) {
+    @include respond(tablet-sm) {
       flex: 0 1 65%;
     }
   }
@@ -124,7 +124,7 @@
     align-items: center;
     padding: 0 1rem;
     // padding: 1rem;
-    @include respond(tab-port2) {
+    @include respond(tablet-sm) {
       // padding: 0.8rem;
       // margin: auto 0;
     }
@@ -135,7 +135,7 @@
     font-size: 0.8rem;
     color: var(--color-typo-grey-light);
 
-    @include respond(tab-port2) {
+    @include respond(tablet-sm) {
       font-size: 0.7rem;
     }
 
@@ -149,7 +149,7 @@
     font-weight: 700;
     text-align: center;
 
-    @include respond(tab-port2) {
+    @include respond(tablet-sm) {
       font-size: 0.8rem;
       line-height: 1.5;
     }

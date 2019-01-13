@@ -1,5 +1,5 @@
 .b-info-list {
-  @include respond(tab-port2) {
+  @include respond(tablet-sm) {
     margin-top: 1rem;
   }
   &__item {

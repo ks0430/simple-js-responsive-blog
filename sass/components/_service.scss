@@ -6,7 +6,7 @@
   // padding: 2rem;
 
   // Position media query
-  @include respond(tab-port2) {
+  @include respond(tablet-sm) {
     margin: 1rem 0;
   }
 

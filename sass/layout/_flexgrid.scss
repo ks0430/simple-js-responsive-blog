@@ -8,14 +8,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  &[row] {
-    flex-direction: row;
-  }
-
-  &[column] {
-    flex-direction: column;
-  }
-
   //   Children - fixed margin
   & [class*="b-item"] {
     flex: 1;
@@ -46,32 +38,32 @@
   }
 
   .b-item-12--md {
-    @include respond(tab-port2) {
+    @include respond(tablet-sm) {
       padding: 0;
       flex: 0 1 100%;
     }
   }
 
   .b-item-6--md {
-    @include respond(tab-port2) {
+    @include respond(tablet-sm) {
       flex: 0 1 calc((100% - #{$grid-gutter}) / 2);
     }
   }
 
   .b-item-4--md {
-    @include respond(tab-port2) {
+    @include respond(tablet-sm) {
       flex: 0 1 calc((100% - 2 *#{$grid-gutter}) / 3);
     }
   }
 
   .b-item-3--md {
-    @include respond(tab-port2) {
+    @include respond(tablet-sm) {
       flex: 0 1 calc((100% - 3 *#{$grid-gutter}) / 4);
     }
   }
 
   .b-item-2--md {
-    @include respond(tab-port2) {
+    @include respond(tablet-sm) {
       flex: 0 1 calc((100% - 5 *#{$grid-gutter}) / 6);
     }
   }
@@ -121,7 +113,7 @@
   }
 
   &.column-md {
-    @include respond(tab-port) {
+    @include respond(tablet-lg) {
       flex-direction: column;
     }
   }

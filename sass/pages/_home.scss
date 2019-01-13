@@ -18,8 +18,8 @@
     height: 28vw;
     margin-bottom: -20%; //unit is the img-box width
 
-    @include respond(tab-port2) {
-      // breakpoint: tab-port2 - fixed width & height
+    @include respond(tablet-sm) {
+      // breakpoint: tablet-sm - fixed width & height
       height: 15rem;
       width: 15rem;
       margin: 0 auto;
@@ -42,7 +42,7 @@
 .b-about-me {
   padding: 4rem 3rem 3rem 3rem;
 
-  @include respond(tab-port2) {
+  @include respond(tablet-sm) {
     padding: 2.5rem;
   }
 }

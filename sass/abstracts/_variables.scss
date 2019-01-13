@@ -19,7 +19,20 @@ $color-primary: #2eca7f;
 $max-width: 64rem;
 
 //  grid system
-$grid-gutter: 1rem;
+$grid-gutter: 2rem;
 
 // Spacing utilities
 $spacing: 2rem;
+
+// spacing map for padding & margin auto create
+$spacingMap: (
+  0: 0,
+  1: ($spacing * 0.25),
+  2: ($spacing * 0.5),
+  3: ($spacing * 1),
+  4: ($spacing * 1.5),
+  5: ($spacing * 2),
+  6: ($spacing * 3),
+);
+
+

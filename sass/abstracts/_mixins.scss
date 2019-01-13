@@ -8,9 +8,22 @@
   Respond manager
   37.5em => 600px
   56.23em => 900px
+  66.875em => 1070px
   75em => 1200px
   112.5em => 1800px
 */
+
+// The empty parenthess for null value in margin create
+$breakPoints:
+(
+null:null,
+phone: xs,
+tablet-sm: sm,
+tablet-lg: md,
+tablet-land: lg,
+desktop-big: xl
+);
+
 
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
@@ -18,23 +31,23 @@
       @content;
     }
   }
-  @if $breakpoint == tab-port2 {
+  @if $breakpoint == tablet-sm {
     @media (max-width: 51.375em) {
       @content;
     }
   }
-  @if $breakpoint == tab-port {
+  @if $breakpoint == tablet-lg {
     @media (max-width: 66.875em) {
       @content;
     }
   }
-  @if $breakpoint == tab-land {
+  @if $breakpoint == tablet-land {
     @media (max-width: 75em) {
       @content;
     }
   }
-  @if $breakpoint == big-desktop {
-    @media (max-width: 112.5em) {
+  @if $breakpoint == desktop-big {
+    @media (min-width: 75em) {
       @content;
     }
   }
