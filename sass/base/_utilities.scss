@@ -40,7 +40,7 @@
 // Example:
 // u-mb-2 / 
 @each $breakPoint, $bkSize in $breakPoints {
-  // If breakpoint is current 
+  // If breakpoint is null, do not add reponsive breakpoint
   @if $breakPoint == null {
     @include spacingCreate($bkSize);
   } @else {
@@ -50,6 +50,9 @@
   }
 }
 
+
+
+// margin auto
 .u-m-auto {
   margin: auto;
 }
@@ -74,3 +77,19 @@
   margin-bottom: auto;
 }
 
+
+.u-box-1 {
+  width: $box-basic;
+  height: $box-basic;
+  overflow: hidden;
+}
+
+.u-box-2 {
+  width: $box-basic * 1.5;
+  height: $box-basic * 1.5;
+  overflow: hidden;
+}
+
+.u-rounded {
+  border-radius: 100%;
+}

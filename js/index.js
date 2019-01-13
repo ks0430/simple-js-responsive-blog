@@ -9,7 +9,9 @@ let eventTrash = 0;
 $(document).ready(function () {
   console.log("Document ready!");
 
-  window.location.replace("./#home");
+
+  redrirectHomeHandler();
+
   $(window).scroll(() => {
     // Header: change stick header background
     // if use arrow function, then this will bind to window object.
@@ -23,11 +25,19 @@ $(document).ready(function () {
   // Page select animation
   selectionChange();
 
-  // Initial stats
-  initial();
 
   // Preload svg
   preloadSVG();
+
+  // For home page
+  const path = window.location.pathname;
+  console.log("window", path);
+  if (path === "/") {
+    window.location.replace("./#home");
+    // Initial stats
+    initial();
+  }
+
 
   // Mail
   // Todo:
@@ -35,6 +45,11 @@ $(document).ready(function () {
   // 2. Google map conflict with form.children reading
   // mailFormHandler();
 });
+
+const redrirectHomeHandler = () => {
+  const path = window.location;
+  console.log(window.location);
+}
 
 // header stick handler - bind to document object
 const stickHeaderHandler = () => {
@@ -113,6 +128,12 @@ const selectionChange = () => {
 
 const initial = () => {
   let currentSection = document.querySelector("section:target > .b-content");
+
+  // For other page, some section is null.
+  console.log(currentSection);
+  if (!currentSection) return;
+
+
   currentSection.classList.add("b-current-content");
   Page.currentPage = currentSection;
 
@@ -157,8 +178,8 @@ const pageMoveIn = page => {
 
 const preloadSVG = () => {
   const ajax = new XMLHttpRequest();
-  const pathName = window.location.pathname;
-  const svgPath = pathName + "img/portfolio/icons/sprite.svg";
+  const origin = window.location.origin;
+  const svgPath = origin + "/img/portfolio/icons/sprite.svg";
   console.log(svgPath);
   ajax.open("GET", svgPath);
   ajax.send();

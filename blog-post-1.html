@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Google Fonts: Montserrat -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet" />
+    <!-- Bootsrap JS -->
+    <script src="./bootstrap-4.2.1-dist/dependecies/jquery.js"></script>
+    <script src="./bootstrap-4.2.1-dist/dependecies/popper.min.js"></script>
+    <!-- Main css (Include BS) -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Main JS -->
+    <script src="./js/index.js"></script>
+    <title>Blog</title>
+</head>
+
+<body>
+    <div class="b-page">
+        <div class="b-background-img">
+            <img src="./img/portfolio/main_bg.png" alt="background image" />
+        </div>
+        <header class="b-header b-header--mobile" id="header">
+            <nav class="u-m-auto d-flex align-items-center justify-content-space-between u-p-2--md b-navbar">
+                <a class="b-navbar__brand" href="./#home">Evelyn <span>Chu</span></a>
+                <input type="checkbox" id="navbar-mobile" class="b-navbar__mobile-checkbox" />
+                <label for="navbar-mobile" class="b-navbar__mobile-label">
+                    <svg class="b-navbar__mobile-svgicon">
+                        <use xlink:href="#icon-more"></use>
+                    </svg>
+                </label>
+                <ul class="d-flex column-md b-navbar__list">
+                    <li class="b-navbar__item">
+                        <!-- Add ./ for blog page load home page section -->
+                        <a href="./#home" class="u-p-2 u-my-2--md b-navbar__link">Home</a>
+                    </li>
+                    <li class="b-navbar__item">
+                        <a href="./#resume" class="u-p-2 u-my-2--md b-navbar__link">Resume</a>
+                    </li>
+                    <li class="b-navbar__item">
+                        <a href="./#services" class="u-p-2 u-my-2--md b-navbar__link">Services</a>
+                    </li>
+                    <li class="b-navbar__item">
+                        <a href="./#blog" class="u-p-2 u-my-2--md b-navbar__link">Blog</a>
+                    </li>
+                    <li class="b-navbar__item">
+                        <a href="./#contact" class="u-p-2 u-my-2--md b-navbar__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="b-main">
+            <section class="b-blog" id="blog">
+                <div class="b-content b-current-content">
+                    <div class="b-details-wrap">
+                        <!-- Blog content start -->
+                        <figure class="b-blog__img-wrap">
+                            <img src="./img/portfolio/CG/chiaki-02.png" class="b-img--fit" alt="chiaki_01">
+                        </figure>
+                        <div class="b-blog__body-wrap u-m-4">
+                            <div class="b-blog__article">
+                                <div class="b-article">
+                                    <h2 class="b-title--lg u-mb-3">Bootstrap is the Most Popular HTML, CSS, and JS Framework</h2>
+                                    <div class="b-article-info-wrap u-mb-3">
+                                        <span class="b-article-time">23 November, 2019</span>
+                                        <span class="b-article-author">Evelyn Chu</span>
+                                        <span class="b-article__category">Technolgy</span>
+                                    </div>
+                                    <p class="b-aticle-body u-mb-2">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                        elit.
+                                        Ratione harum praesentium id corporis, culpa sit inventore eveniet quis nihil
+                                        perferendis doloremque obcaecati optio aliquid enim nisi laborum illum est at?</p>
+                                    <p class="b-aticle-body u-mb-2">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                        elit.Ratione harum praesentium id corporis, culpa sit inventore eveniet quis
+                                        nihilperferendis doloremque obcaecati optio aliquid enim nisi laborum illum est
+                                        at?Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eum
+                                        asperioresrepudiandaeipsa veniam nesciunt dolorum architecto. Voluptas consequatur exercitationem
+                                        dolorestempora ratione placeat, ipsa quam consectetur voluptatibus quis
+                                        neque!Loremipsumdolor sit, amet consectetur adipisicing elit.
+                                        Ratione harum praesentium id corporis, culpa sit inventore eveniet quis nihil
+                                        perferendis doloremque obcaecati optio aliquid enim nisi laborum illum est
+                                        at?Loremipsum dolor sit amet consectetur adipisicing elit. Saepe eum asperiores
+                                        repudiandaeipsa veniam nesciunt dolorum architecto. Voluptas consequatur exercitationem
+                                        dolorestempora ratione placeat, ipsa quam consectetur voluptatibus quis neque!</p>
+                                    <p class="b-aticle-body b-article-body--quote">Lorem ipsum dolor sit, amet
+                                        consecteturadipisicing elit.Ratione harum praesentium id corporis, culpa sit inventore eveniet quis nihil
+                                        perferendis doloremque obcaecati optio aliquid enim nisi laborum illum est
+                                        at?Loremipsum dolor sit amet consectetur adipisicing elit. Saepe eum asperiores
+                                        repudiandaeipsa veniam nesciunt dolorum architecto. Voluptas consequatur exercitationem
+                                        dolorestempora ratione placeat, ipsa quam consectetur voluptatibus quis neque!Lorem
+                                        ipsumdolor sit, amet consectetur adipisicing elit.</p>
+                                    <div class="b-article__bottom d-flex">
+                                        <ul class="b-article__tag-list d-flex u-mr-auto">
+                                            <li class="b-article__tag">HTML5</li>
+                                            <li class="b-article__tag">CSS3</li>
+                                            <li class="b-article__tag">jQuery</li>
+                                            <li class="b-article__tag">Ajax</li>
+                                            <li class="b-article__tag">PHP5</li>
+                                        </ul>
+                                        <ul class="b-article__social-link-list d-flex">
+                                            <li class="b-article__social-link">
+                                                <a href="#">
+                                                    <svg class="b-article__social-link-icon u-box-1">
+                                                        <use xlink:href="#icon-facebook"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li class="b-article__social-link">
+                                                <a href="#">
+                                                    <svg class="b-article__social-link-icon  u-box-1">
+                                                        <use xlink:href="#icon-twitter"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li class="b-article__social-link">
+                                                <a href="#">
+                                                    <svg class="b-article__social-link-icon  u-box-1">
+                                                        <use xlink:href="#icon-instagram"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-blog__commets u-mb-3">
+                                <h2 class="b-title--md u-mb-2">Comments (3)</h2>
+                                <ul class="b-comment-list">
+                                    <li class="b-comment d-flex">
+                                        <div class="b-commeng__left u-mr-auto">
+                                        <figure class="b-comment__img-wrap u-box-2 u-rounded">
+                                            <img src="./img/portfolio/chiaki-01-sm.png" alt="chiaki 01" class="b-comment__img b-img--fit">
+                                        </figure>
+                                        </div>
+                                        <div class="b-comment__right">
+                                            <p class="b-comment__info">
+                                                    <span class="b-comment__name">Evelyn Chu</span>
+                                                    <span class="b-comment__name">1 hour ago</span>
+                                            </p>
+                                            <p class="b-comment__body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, ratione dolor. Delectus pariatur, dolorem autem culpa iusto ut repellat nobis voluptatum id quibusdam. Nisi culpa inventore, labore et sint recusandae.</p>
+                                            <button class="b-comment__reply">
+                                                <svg class="u-box-1">
+                                                    <use xlink:href="#icon-facebook"></use>
+                                                </svg>
+                                                <span>Reply</span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="b-blog__comments-form u-mr-6">
+                                <h2 class="b-title--md u-mb-3">Leave a Comment</h2>
+                                <div class="b-form">
+                                    <div class="b-form__group">
+                                        <div class="b-form__icon-wrap">
+                                            <svg class="b-form__icon">
+                                                <use xlink:href="#icon-user"></use>
+                                            </svg>
+                                        </div>
+                                        <input type="text" id="name" class="b-form__input" required/>
+                                        <label class="b-form__label" for="name">Your Name</label>
+                                        <div class="b-form__input-border"></div>
+                                    </div>
+                                    <div class="b-form__group">
+                                        <div class="b-form__icon-wrap b-form__icon-wrap--textarea">
+                                            <svg class="b-form__icon">
+                                                <use xlink:href="#icon-user"></use>
+                                            </svg>
+                                        </div>
+                                        <textarea cols="5" rows="5"  type="text" id="message" class="b-form__textarea" required></textarea>
+                                        <label class="b-form__label" for="message">Messages</label>
+                                        <div class="b-form__input-border"></div>
+                                    </div>
+                                    <button class="b-form__button">Send Message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="b-footer">
+            <div class="b-footer__copyright">
+                © 2019 All rights reserved. Designed by
+                <a class="b-link" href="#">Evelyn</a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+
+</html>
