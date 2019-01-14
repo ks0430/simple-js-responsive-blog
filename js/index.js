@@ -3,7 +3,7 @@
 const Global = {
   isHomePage: false,
   // On github page, host on sub page
-  isHostOnSubPage: false
+  isHostOnSubPage: true
 }
 
 /*---------------------Section & Navbar Control--------------------*/
