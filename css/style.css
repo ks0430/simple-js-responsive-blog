@@ -1540,13 +1540,19 @@ a:hover {
 
 @keyframes zoomInRightBottom {
   0% {
-    opacity: 0.8;
     transform: translateX(100%) rotateY(65deg) scale(0.8); } }
 
 @keyframes zoomOutLeftBottom {
   100% {
-    opacity: 0.3;
     transform: translateX(-100%) rotateY(-65deg) scale(0.8); } }
+
+@keyframes zoomInRightBottom-phone {
+  0% {
+    transform: translate(100%, 50%) scale(0.8); } }
+
+@keyframes zoomOutLeftBottom-phone {
+  100% {
+    transform: translate(-100%, 10%) scale(0.8); } }
 
 .b-background-img {
   position: absolute;
@@ -2362,7 +2368,7 @@ a:hover {
   position: fixed;
   width: 100vw;
   top: 0;
-  z-index: 10;
+  z-index: 1000;
   height: 6rem;
   transition: all 0.3s;
   display: flex; }
@@ -2403,7 +2409,12 @@ a:hover {
   margin-bottom: 4rem;
   box-shadow: 0 0.8rem 1.5rem rgba(0, 0, 0, 0.15);
   position: relative;
-  z-index: 5; }
+  z-index: 5;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  transform: rotate(0);
+  -webkit-transform: scale(1); }
   @media (max-width: 66.875em) {
     .b-content {
       margin-top: 5rem;
@@ -2416,13 +2427,19 @@ a:hover {
   display: block;
   opacity: 1;
   visibility: visible;
-  animation: zoomOutLeftBottom 1s; }
+  animation: zoomOutLeftBottom 1s both; }
+  @media (max-width: 37.5em) {
+    .u-anim-out {
+      animation: zoomOutLeftBottom-phone  1s both; } }
 
 .u-anim-in {
   display: block;
   opacity: 1;
   visibility: visible;
-  animation: zoomInRightBottom 1s; }
+  animation: zoomInRightBottom 1s both; }
+  @media (max-width: 37.5em) {
+    .u-anim-in {
+      animation: zoomInRightBottom-phone 1s both; } }
 
 .b-details-wrap {
   padding: 3rem; }

@@ -121,7 +121,7 @@ class SectionController {
     this.toggleSection(currentSection);
     navbar.active(this.currentHash);
     // Click on brand
-    this.brandClick(navbar);
+    // this.brandClick(navbar);
   }
 
 
@@ -213,7 +213,10 @@ class Navbar {
     $("#navbar-mobile")[0].checked = false;
     // During section animation, set disable.
     let isContinue = this.onClick(link.hash);
-    if(isContinue) this.toggle(link.hash);
+    if(isContinue){
+      this.toggle(link.hash);
+      console.log("continue");
+    } 
   }
 
   active(hash) {

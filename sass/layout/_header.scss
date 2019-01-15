@@ -3,7 +3,7 @@
   // Fixed's parent/ref is not body, so set 100wh again to against scrollbar width
   width: 100vw;
   top: 0;
-  z-index: 10;
+  z-index: 1000;
   height: 6rem;
   transition: all 0.3s;
 

@@ -49,6 +49,13 @@
   position: relative;
   z-index: 5;
 
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility:    hidden;
+  -ms-backface-visibility:     hidden;
+  transform: rotate(0);
+  -webkit-transform: scale(1);
+
+
   @include respond(tablet-lg) {
     // not effect in position absolute will overflow
     // margin: 0 1rem;
@@ -62,17 +69,26 @@
 }
 
 .u-anim-out {
+
   display: block;
   opacity: 1;
   visibility: visible;
-  animation: zoomOutLeftBottom 1s;
+  animation: zoomOutLeftBottom 1s both;
+
+  @include respond(phone){
+    animation: zoomOutLeftBottom-phone  1s both;
+  }
 }
 
 .u-anim-in {
   display: block;
   opacity: 1;
   visibility: visible;
-  animation: zoomInRightBottom 1s;
+  animation: zoomInRightBottom 1s both;
+
+  @include respond(phone) {
+    animation: zoomInRightBottom-phone 1s both;
+  }
 }
 
 .b-details-wrap {
@@ -80,4 +96,6 @@
   @include respond(phone) {
     padding: 2rem;
   }
+
+  
 }
