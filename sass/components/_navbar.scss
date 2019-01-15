@@ -20,6 +20,7 @@
 
       @include respond(tablet-lg) {
         color: white;
+        padding: 0 1rem ;
       }
     }
 
@@ -27,7 +28,6 @@
     &:active {
       cursor: pointer;
     }
-
     & span {
       color: var(--color-primary);
 
@@ -49,6 +49,7 @@
 
     @include respond(tablet-lg) {
       display: block;
+      padding: 0 1rem;
     }
   }
 

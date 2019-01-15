@@ -1554,6 +1554,12 @@ a:hover {
   100% {
     transform: translate(-100%, 10%) scale(0.8); } }
 
+@keyframes orbit {
+  from {
+    transform: rotate(-45deg) translateX(2.5rem) rotate(45deg); }
+  to {
+    transform: rotate(315deg) translateX(2.5rem) rotate(-315deg); } }
+
 .b-background-img {
   position: absolute;
   top: 0;
@@ -1581,7 +1587,8 @@ a:hover {
     color: var(--color-typo-grey-dark); }
     @media (max-width: 66.875em) {
       .b-navbar__brand:link, .b-navbar__brand:visited {
-        color: white; } }
+        color: white;
+        padding: 0 1rem; } }
   .b-navbar__brand:hover, .b-navbar__brand:active {
     cursor: pointer; }
   .b-navbar__brand span {
@@ -1597,7 +1604,8 @@ a:hover {
       cursor: pointer; }
     @media (max-width: 66.875em) {
       .b-navbar__mobile-label {
-        display: block; } }
+        display: block;
+        padding: 0 1rem; } }
   .b-navbar__mobile-svgicon {
     fill: white;
     height: 1.5rem;
@@ -1862,9 +1870,10 @@ a:hover {
   background-size: 60%;
   background-repeat: no-repeat;
   background-position: 70% center; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 66.875em) {
     .b-page-title {
-      padding: 2rem; } }
+      padding: 2rem;
+      background-size: 100%; } }
 
 .b-timeline__list {
   padding: 1rem 0;
@@ -1967,7 +1976,7 @@ a:hover {
     height: 7rem;
     width: 7rem;
     border-radius: 50%;
-    background-color: var(--color-background-grey);
+    background-color: var(--color-background-grey-light2);
     text-align: center;
     display: flex;
     transition: all 0.3s;
@@ -1978,8 +1987,11 @@ a:hover {
     .b-service__icon-wrap:hover {
       transform: translateY(-5px);
       box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.15); }
+  .b-service__icon {
+    width: 3.5rem;
+    height: 3.5rem; }
   .b-service__title {
-    margin-bottom: 1.2rem; }
+    margin-bottom: 1rem; }
   .b-service__description {
     text-align: center;
     font-size: 0.9rem;
@@ -1989,22 +2001,51 @@ a:hover {
   margin: 1.4rem auto;
   height: 3.5rem;
   width: 3.5rem;
-  background-color: var(--color-typo-grey-light);
   color: white;
   transition: all 0.3s;
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: rotate(45deg); }
+  position: relative; }
   @media (max-width: 51.375em) {
     .b-logo--square {
       margin: 2.5rem auto; } }
   .b-logo--square span {
-    transform: rotate(-45deg);
-    font-size: 0.9rem; }
+    font-size: 0.9rem;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; }
   .b-logo--square:hover {
-    background-color: var(--color-typo-grey);
     cursor: pointer; }
+    .b-logo--square:hover::before {
+      animation: orbit 1.5s infinite ease-in-out;
+      transition: all 1s;
+      opacity: 1;
+      visibility: visible; }
+  .b-logo--square::before {
+    content: "";
+    opacity: 0;
+    visibility: hidden;
+    position: relative;
+    height: 10px;
+    width: 10px;
+    background-color: var(--color-primary);
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 2000; }
+  .b-logo--square::after {
+    content: "";
+    position: absolute;
+    height: 5rem;
+    width: 5rem;
+    border: 1px solid var(--color-background-grey-light2);
+    z-index: 20;
+    border-radius: 100%; }
+
+.b-logo__img {
+  width: 100%;
+  position: absolute;
+  z-index: 21; }
 
 .b-card {
   flex: 0 1 47%;
@@ -2170,7 +2211,7 @@ a:hover {
       margin-bottom: .5rem; } }
 
 .b-article__body {
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.8; }
 
 .b-article__body--quote {
@@ -2253,7 +2294,7 @@ a:hover {
   margin-bottom: .8rem; }
   @media (max-width: 37.5em) {
     .b-comment__info-list {
-      font-size: .8rem; } }
+      font-size: .9rem; } }
 
 .b-comment__name {
   font-weight: 600;
@@ -2271,7 +2312,7 @@ a:hover {
   font-size: 0.7rem; }
 
 .b-comment__body {
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.4;
   margin-bottom: .8rem; }
 
@@ -2304,45 +2345,45 @@ a:hover {
     .b-container .b-item-12:last-child {
       padding: 0; }
   .b-container .b-item-6 {
-    flex: 0 1 calc((100% - 2rem) / 2); }
+    flex: 0 1 calc((100% - 1.5rem) / 2); }
   .b-container .b-item-4 {
-    flex: 0 1 calc((100% - 2 *2rem) / 3); }
+    flex: 0 1 calc((100% - 2 *1.5rem) / 3); }
   .b-container .b-item-3 {
-    flex: 0 1 calc((100% - 3 *2rem) / 4); }
+    flex: 0 1 calc((100% - 3 *1.5rem) / 4); }
   .b-container .b-item-2 {
-    flex: 0 1 calc((100% - 5 *2rem) / 6); }
+    flex: 0 1 calc((100% - 5 *1.5rem) / 6); }
   @media (max-width: 51.375em) {
     .b-container .b-item-12--md {
       padding: 0;
       flex: 0 1 100%; } }
   @media (max-width: 51.375em) {
     .b-container .b-item-6--md {
-      flex: 0 1 calc((100% - 2rem) / 2); } }
+      flex: 0 1 calc((100% - 1.5rem) / 2); } }
   @media (max-width: 51.375em) {
     .b-container .b-item-4--md {
-      flex: 0 1 calc((100% - 2 *2rem) / 3); } }
+      flex: 0 1 calc((100% - 2 *1.5rem) / 3); } }
   @media (max-width: 51.375em) {
     .b-container .b-item-3--md {
-      flex: 0 1 calc((100% - 3 *2rem) / 4); } }
+      flex: 0 1 calc((100% - 3 *1.5rem) / 4); } }
   @media (max-width: 51.375em) {
     .b-container .b-item-2--md {
-      flex: 0 1 calc((100% - 5 *2rem) / 6); } }
+      flex: 0 1 calc((100% - 5 *1.5rem) / 6); } }
   @media (max-width: 37.5em) {
     .b-container .b-item-12--sm {
       padding: 0;
       flex: 0 1 100%; } }
   @media (max-width: 37.5em) {
     .b-container .b-item-6--sm {
-      flex: 0 1 calc((100% - 4 *2rem) / 2); } }
+      flex: 0 1 calc((100% - 4 *1.5rem) / 2); } }
   @media (max-width: 37.5em) {
     .b-container .b-item-4--sm {
-      flex: 0 1 calc((100% - 4 *2rem) / 3); } }
+      flex: 0 1 calc((100% - 4 *1.5rem) / 3); } }
   @media (max-width: 37.5em) {
     .b-container .b-item-3--sm {
-      flex: 0 1 calc((100% - 4 *2rem) / 4); } }
+      flex: 0 1 calc((100% - 4 *1.5rem) / 4); } }
   @media (max-width: 37.5em) {
     .b-container .b-item-2--sm {
-      flex: 0 1 calc((100% - 5 *2rem) / 6); } }
+      flex: 0 1 calc((100% - 5 *1.5rem) / 6); } }
 
 .d-flex {
   display: flex; }
@@ -2409,12 +2450,7 @@ a:hover {
   margin-bottom: 4rem;
   box-shadow: 0 0.8rem 1.5rem rgba(0, 0, 0, 0.15);
   position: relative;
-  z-index: 5;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  transform: rotate(0);
-  -webkit-transform: scale(1); }
+  z-index: 5; }
   @media (max-width: 66.875em) {
     .b-content {
       margin-top: 5rem;

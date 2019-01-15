@@ -10,7 +10,8 @@
   background-repeat: no-repeat;
   background-position: 70% center;
 
-  @include respond(phone) {
+  @include respond(tablet-lg) {
     padding: 2rem;
+    background-size: 100%;
   }
 }

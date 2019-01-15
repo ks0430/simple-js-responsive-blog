@@ -1,5 +1,4 @@
 .b-article {
-
     &__title {
         font-size: 2rem;
         font-weight: 600;
@@ -22,12 +21,9 @@
             border-right: 1px solid var(--color-line-grey);
         }
 
-  
-
         @include respond(tablet-lg) {
             font-size: .8rem;
         }
-
 
         @include respond(phone) {
             & > li {
@@ -43,9 +39,6 @@
                 padding-left: .5rem;
             }
         }
-
-
-
     }
 
     &__info-item {
@@ -55,7 +48,6 @@
             display: flex;
             flex-direction: column;
         }
-
     }
 
     // --time
@@ -66,13 +58,10 @@
         @include respond(phone) {
            margin-bottom: .5rem;
         }
-
     }
 
-
-
     &__body {
-        font-size: 0.9rem;
+        font-size: 1rem;
         line-height: 1.8;
     }
 
@@ -90,8 +79,6 @@
         color: var(--color-typo-grey-light);
         display: block;
         padding-top: .5rem;
-
-
     }
 
     &__bottom {
@@ -121,7 +108,6 @@
         text-transform: uppercase;
         border-radius: 3px;
 
-
         @include respond(phone) {
             margin-bottom: 1rem;
         }
@@ -144,8 +130,7 @@
         height: 1.6rem;
         background-color: white;
         border: 1px solid var(--color-line-grey);
-        & > a{
-
+        & > a {
             &:link,
             &:visited {
                 width: 100%;
@@ -165,7 +150,5 @@
         height: 60%;
         width: 60%;
         fill: var(--color-typo-grey-light-2);
-
-
     }
 }

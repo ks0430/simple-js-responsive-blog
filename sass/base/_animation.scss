@@ -13,6 +13,7 @@
   }
 }
 
+// Rotate will cause flash on iphone
 @keyframes zoomInRightBottom-phone {
   0% {
     // opacity: 0.8;
@@ -27,17 +28,8 @@
   }
 }
 
-
-// @keyframes zoomInRightBottom {
-//   0% {
-//     // opacity: 0.8;
-//     transform: translateX(500%);
-//   }
-// }
-
-// @keyframes zoomOutLeftBottom {
-//   100% {
-//     // opacity: 0.3;
-//     transform: translateX(-500%) ;
-//   }
-// }
+// Orbit
+@keyframes orbit {
+  from { transform: rotate(-45deg) translateX(2.5rem) rotate(45deg); }
+  to   { transform: rotate(315deg) translateX(2.5rem) rotate(-315deg); }
+}

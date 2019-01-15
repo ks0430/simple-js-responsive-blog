@@ -14,7 +14,7 @@
     height: 7rem;
     width: 7rem;
     border-radius: 50%;
-    background-color: var(--color-background-grey);
+    background-color: var(--color-background-grey-light2);
     text-align: center;
     display: flex;
     transition: all 0.3s;
@@ -29,13 +29,21 @@
     }
   }
 
+  &__icon {
+    width: 3.5rem;
+    height: 3.5rem;
+
+  }
+
   &__title {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
   }
 
   &__description {
     text-align: center;
     font-size: 0.9rem;
     line-height: 1.4;
+
+
   }
 }
