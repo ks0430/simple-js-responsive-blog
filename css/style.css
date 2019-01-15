@@ -2463,19 +2463,19 @@ a:hover {
   display: block;
   opacity: 1;
   visibility: visible;
-  animation: zoomOutLeftBottom 1s both; }
+  animation: zoomOutLeftBottom 1s; }
   @media (max-width: 37.5em) {
     .u-anim-out {
-      animation: zoomOutLeftBottom-phone  1s both; } }
+      animation: zoomOutLeftBottom-phone 1s; } }
 
 .u-anim-in {
   display: block;
   opacity: 1;
   visibility: visible;
-  animation: zoomInRightBottom 1s both; }
+  animation: zoomInRightBottom 1s; }
   @media (max-width: 37.5em) {
     .u-anim-in {
-      animation: zoomInRightBottom-phone 1s both; } }
+      animation: zoomInRightBottom-phone 1s; } }
 
 .b-details-wrap {
   padding: 3rem; }

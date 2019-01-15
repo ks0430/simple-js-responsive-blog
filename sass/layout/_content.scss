@@ -49,6 +49,8 @@
   position: relative;
   z-index: 5;
 
+
+
   @include respond(tablet-lg) {
     // not effect in position absolute will overflow
     // margin: 0 1rem;
@@ -66,10 +68,10 @@
   display: block;
   opacity: 1;
   visibility: visible;
-  animation: zoomOutLeftBottom 1s both;
+  animation: zoomOutLeftBottom 1s;
 
   @include respond(phone){
-    animation: zoomOutLeftBottom-phone  1s both;
+    animation: zoomOutLeftBottom-phone 1s;
   }
 }
 
@@ -77,10 +79,10 @@
   display: block;
   opacity: 1;
   visibility: visible;
-  animation: zoomInRightBottom 1s both;
+  animation: zoomInRightBottom 1s;
 
   @include respond(phone) {
-    animation: zoomInRightBottom-phone 1s both;
+    animation: zoomInRightBottom-phone 1s;
   }
 }
 
