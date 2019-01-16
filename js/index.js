@@ -121,7 +121,7 @@ class SectionController {
     this.toggleSection(currentSection);
     navbar.active(this.currentHash);
     // Click on brand
-    // this.brandClick(navbar);
+    this.brandClick(navbar);
   }
 
 
